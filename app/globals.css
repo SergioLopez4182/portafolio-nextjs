@@ -1,0 +1,38 @@
+@layer mantine, tailwind-theme, tailwind-utilities;
+
+@import '@mantine/core/styles.layer.css' layer(mantine);
+
+@import 'tailwindcss/utilities' layer(tailwind);
+@import 'tailwindcss/theme' layer(tailwind-theme);
+
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-mint-500: oklch(0.72 0.11 178);
+}
+
+:root[data-mantine-color-scheme="light"] {
+    --mantine-color-body: #ffffff;
+    --mantine-color-text: #020617;
+    --mantine-color-dimmed: #64748b;
+    --mantine-color-border: #cbd5f5;
+}
+
+:root[data-mantine-color-scheme="dark"] {
+    --mantine-color-body: #020617;
+    --mantine-color-text: #f8fafc;
+    --mantine-color-dimmed: #94a3b8;
+    --mantine-color-border: #1e293b;
+}
+
+:root {
+    --color-bg: var(--mantine-color-body);
+    --color-text: var(--mantine-color-text);
+}
+
+body {
+    background-color: var(--mantine-color-body);
+    color: var(--mantine-color-text);
+    font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
