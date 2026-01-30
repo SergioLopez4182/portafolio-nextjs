@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { ActionIcon, TextInput, PasswordInput, Button, Paper, Title, Text, Checkbox, Stack, Group } from "@mantine/core";
 import { useRouter } from "next/navigation";
-import { Sun, Moon } from "lucide-react";
 import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
 
 
@@ -16,7 +15,7 @@ export default function Home() {
         <Stack gap="md" w={540}>
 
           <Title order={1}>Full Stack Developer</Title>
-          <Text size="lg">Sergio López Sánchez</Text>
+          <Text size="xl" c="dimmed">Sergio López Sánchez</Text>
 
           <Text size="xl">
             Ingeniero en Sistemas con experiencia en el desarrollo de aplicaciones web y
@@ -40,9 +39,9 @@ export default function Home() {
               size="lg"
               radius="md"
               className="whitespace-nowrap"
-              onClick={() => router.push("/projects")}
+              onClick={() => router.push("/about")}
             >
-              Ver CV
+              Más sobre mi
             </Button>
           </Group>
 

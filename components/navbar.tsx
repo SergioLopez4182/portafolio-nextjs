@@ -1,6 +1,6 @@
 'use client';
 
-import { TextInput, PasswordInput, Button, Paper, Title, Checkbox, Stack, Group } from "@mantine/core";
+import { Button, Group } from "@mantine/core";
 import Image from "next/image";
 import { useRouter, usePathname } from 'next/navigation';
 
@@ -36,10 +36,6 @@ export default function Navbar() {
                 height={80}
                 priority
             />
-
-            {/* <div className="text-sm text-gray-500">
-                Ruta actual: {pathname}
-            </div> */}
 
             <Group gap='xs'>
                 {
