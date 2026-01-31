@@ -31,8 +31,7 @@ export default function Projects() {
                 </Group>
 
                 <Text size="lg" c="dimmed">
-                    Hola, soy Sergio, desarrollador Full Stack apasionado por la tecnología, los videojuegos, la música y el ejercicio. <br />
-                    He trabajado principalmente en proyectos donde el software impacta procesos reales: operación, seguridad, transporte y digitalización de flujos físicos.
+                    Selección de proyectos donde participé en diseño, desarrollo e implementación de soluciones reales.
                 </Text>
             </Stack>
 

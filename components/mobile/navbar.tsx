@@ -58,7 +58,10 @@ export default function MobileNavbar() {
                                 }
                                 size="md"
                                 className="whitespace-nowrap"
-                                onClick={() => router.push(section.url)}
+                                onClick={() => {
+                                    router.push(section.url);
+                                    close();
+                                }}
                             >
                                 {section.name}
                             </Button>
