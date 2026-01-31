@@ -30,7 +30,7 @@ export default function Navbar() {
     return (
         <nav className="px-6 md:px-8 h-16 flex items-center justify-between bg-white">
             <Image
-                src="/logo-placeholder.svg"
+                src="/logo-placeholder-alt.svg"
                 alt="Logo"
                 width={180}
                 height={80}

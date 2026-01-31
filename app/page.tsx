@@ -10,14 +10,15 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <Paper radius="md" p="xl">
-      <Group gap="lg">
+    <main
+      className="flex gap-4 p-8 rounded-xl"
+    >
+      <section className="">
         <Stack gap="md" w={540}>
+          <Title order={1}>Sergio López Sánchez</Title>
+          <Title order={2}>Full Stack Developer</Title>
 
-          <Title order={1}>Full Stack Developer</Title>
-          <Text size="xl" c="dimmed">Sergio López Sánchez</Text>
-
-          <Text size="xl">
+          <Text size="lg" c="dimmed">
             Ingeniero en Sistemas con experiencia en el desarrollo de aplicaciones web y
             sistemas internos enfocados en la automatización de procesos administrativos y operativos.
             Especializado en backend, bases de datos e integración de sistemas, con enfoque en eficiencia,
@@ -53,10 +54,11 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               variant="subtle"
-              size="lg"
+              size="xl"
+              radius="md"
               aria-label="LinkedIn"
             >
-              <IconBrandLinkedin style={{ width: "75%", height: "75%" }} />
+              <IconBrandLinkedin size={28}/>
             </ActionIcon>
 
             <ActionIcon
@@ -65,16 +67,18 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               variant="subtle"
-              size="lg"
+              size="xl"
+              radius="md"
               aria-label="Github"
             >
-              <IconBrandGithub style={{ width: "75%", height: "75%" }} />
+              <IconBrandGithub size={28}/>
             </ActionIcon>
           </Group>
 
 
         </Stack>
-
+      </section>
+      <section className="flex justify-center items-center">
         <Image
           src="/placeholder.svg"
           alt="Logo"
@@ -82,8 +86,7 @@ export default function Home() {
           height={360}
           priority
         />
-
-      </Group>
-    </Paper>
+      </section>
+    </main>
   );
 }

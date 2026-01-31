@@ -6,7 +6,7 @@ export default function BaseLayout({
     children: React.ReactNode;
 }) {
     return (
-        <div className="min-h-screen flex flex-col bg-gray-300 dark:bg-black">
+        <div className="min-h-screen flex flex-col bg-gray-200 dark:bg-black">
             <NavBar />
 
             <main className="flex-1 flex items-center justify-center">
