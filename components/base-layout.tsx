@@ -1,4 +1,5 @@
-import NavBar from "@/components/navbar";
+import DesktopNavbar from "@/components/desktop/navbar";
+import MobileNavbar from "@/components/mobile/navbar";
 
 export default function BaseLayout({
     children,
@@ -7,7 +8,16 @@ export default function BaseLayout({
 }) {
     return (
         <div className="min-h-screen flex flex-col bg-gray-200 dark:bg-black">
-            <NavBar />
+
+            {/* Desktop */}
+            <div className="hidden md:block">
+                <DesktopNavbar />
+            </div>
+
+            {/* Mobile */}
+            <div className="block md:hidden">
+                <MobileNavbar />
+            </div>
 
             <main className="flex-1 flex items-center justify-center">
                 {children}

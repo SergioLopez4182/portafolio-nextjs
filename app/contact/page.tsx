@@ -30,11 +30,11 @@ export default function Projects() {
                         target="_blank"
                         rel="noopener noreferrer"
                         variant="subtle"
-                        size="lg"
+                        size="xl"
                         radius="md"
                         aria-label="LinkedIn"
                     >
-                        <IconBrandLinkedin style={{ width: "75%", height: "75%" }} />
+                        <IconBrandLinkedin size={28} />
                     </ActionIcon>
 
                     <ActionIcon
@@ -43,11 +43,11 @@ export default function Projects() {
                         target="_blank"
                         rel="noopener noreferrer"
                         variant="subtle"
-                        size="lg"
+                        size="xl"
                         radius="md"
                         aria-label="Github"
                     >
-                        <IconBrandGithub style={{ width: "75%", height: "75%" }} />
+                        <IconBrandGithub size={28} />
                     </ActionIcon>
                 </Group>
 

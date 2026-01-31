@@ -1,6 +1,6 @@
 'use client';
 
-import { Paper, Title, Button, SimpleGrid, Stack, Text, Group, ActionIcon, Tooltip, HoverCard } from "@mantine/core";
+import { Title, Stack, Text, Group, ActionIcon, HoverCard } from "@mantine/core";
 import { IconAlertCircle } from '@tabler/icons-react';
 import { projects } from '@/data/projects';
 import ProjectCard from "@/components/projects/project-card";
@@ -36,7 +36,7 @@ export default function Projects() {
                 </Text>
             </Stack>
 
-            <Stack align="strech" px="xl">
+            <Stack align="strech">
                 {
                     projects.map((p, i) => (
                         <ProjectCard key={i} project={p} />

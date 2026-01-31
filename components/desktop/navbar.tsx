@@ -23,7 +23,7 @@ const sections = [
     },
 ];
 
-export default function Navbar() {
+export default function DesktopNavbar() {
     const router = useRouter();
     const pathname = usePathname();
 
