@@ -1,18 +1,14 @@
 "use client";
+
 import { Title, Text, Stack, Divider, List, Card, Group } from "@mantine/core";
+import PageLayout from "@/components/layouts/page-layout";
 
 export default function About() {
     return (
-        <Stack
-            align="start"
-            justify="center"
-            p="lg"
-            className="w-[75%] 2xl:w-[50%]"
-        >
-            <Title order={1}>Sobre mi</Title>
+        <PageLayout>
+            <Title order={1}>Sobre mí</Title>
             <Text size="lg" c="dimmed">
-                Hola, soy Sergio, desarrollador Full Stack apasionado por la tecnología, los videojuegos, la música y el ejercicio. <br />
-                He trabajado principalmente en proyectos donde el software impacta procesos reales: operación, seguridad, transporte y digitalización de flujos físicos.
+                Hola, soy Sergio, desarrollador Full Stack apasionado por la tecnología, los videojuegos, la música y el ejercicio. He trabajado principalmente en proyectos donde el software impacta procesos reales: operación, seguridad, transporte y digitalización de flujos físicos.
             </Text>
 
             <Divider />
@@ -20,9 +16,8 @@ export default function About() {
             <Title order={1} ta="center">Background profesional</Title>
 
             <Text size="lg" c="dimmed">
-                Egresé del Instituto Tecnológico de Saltillo en 2021 como Ingeniero en Sistemas Computacionales.
-                Antes de graduarme me uní a Introid Inc. como ingeniero de datos en un proyecto de sistemas distribuidos. Posteriormente continué con el equipo como desarrollador Full Stack, trabajando con frontend, backend, bases de datos e infraestructura.
-                Después de más de tres años con Introid, me uní a Tienda Tec, donde trabajé como desarrollador Full Stack dando soporte a plataformas en distintas versiones de .NET y desarrollando soluciones a medida para clientes, participando en levantamiento de requerimientos, desarrollo y despliegue de sistemas.
+                Egresé del Instituto Tecnológico de Saltillo en 2021 como Ingeniero en Sistemas Computacionales. Antes de graduarme, me uní a Introid Inc. como ingeniero de datos en un proyecto de sistemas distribuidos. Posteriormente, continué con el equipo como desarrollador Full Stack, trabajando con frontend, backend, bases de datos e infraestructura. <br /> <br />
+                Después de más de tres años en Introid, me uní a Tienda Tec, donde trabajé como desarrollador Full Stack, dando soporte a plataformas en distintas versiones de .NET y desarrollando soluciones a la medida para clientes. Participé en el levantamiento de requerimientos, desarrollo y despliegue de sistemas.
             </Text>
 
             <Divider />
@@ -74,10 +69,7 @@ export default function About() {
 
             <Title order={1} ta="center">Forma de trabajo</Title>
             <Text size="lg" c="dimmed">
-                Me gusta comenzar entendiendo a fondo el problema, incluyendo interacción con usuarios finales y levantamiento de requerimientos.
-                Prefiero soluciones simples pero robustas, enfocadas en mantenibilidad y escalabilidad.
-                Trabajo de forma iterativa, buscando feedback temprano del equipo o cliente, lo que permite detectar riesgos y oportunidades rápidamente.
-                Valoro el uso de buenas prácticas, estándares y herramientas que faciliten el trabajo colaborativo.
+                Me gusta comenzar entendiendo a fondo el problema, incluyendo la interacción con usuarios finales y el levantamiento de requerimientos. Prefiero soluciones simples pero robustas, enfocadas en mantenibilidad y escalabilidad. Trabajo de forma iterativa, buscando feedback temprano del equipo o del cliente, lo que permite detectar riesgos y oportunidades rápidamente. Valoro el uso de buenas prácticas, estándares y herramientas que faciliten el trabajo colaborativo.
             </Text>
 
             <Divider />
@@ -95,6 +87,6 @@ export default function About() {
                 <List.Item>Administración y diseño de bases de datos</List.Item>
                 <List.Item>DevOps y despliegue de sistemas</List.Item>
             </List>
-        </Stack>
+        </PageLayout>
     );
 }

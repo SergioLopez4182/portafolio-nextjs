@@ -1,29 +1,30 @@
 "use client";
 
-import Image from "next/image";
-import { ActionIcon, TextInput, PasswordInput, Button, Paper, Title, Text, Checkbox, Stack, Group } from "@mantine/core";
+import { ActionIcon, TextInput, PasswordInput, Button, Paper, Title, Text, Checkbox, Stack, Group, Divider } from "@mantine/core";
 import { useRouter } from "next/navigation";
 import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
+import PageLayout from "@/components/layouts/page-layout";
 
 
 export default function Home() {
   const router = useRouter();
 
   return (
-    <Stack
-      align="start"
-      justify="center"
-      p="lg"
-      className="w-[75%] 2xl:w-[50%]"
-    >
-      <Title order={1}>Sergio López Sánchez</Title>
-      <Title order={2}>Full Stack Developer</Title>
+    <PageLayout>
 
-      <Text size="lg" c="dimmed">
-        Ingeniero en Sistemas con experiencia en el desarrollo de aplicaciones web y
-        sistemas internos enfocados en la automatización de procesos administrativos y operativos.
-        Especializado en backend, bases de datos e integración de sistemas, con enfoque en eficiencia,
-        calidad del código y mejora continua de procesos de negocio.
+      <Stack gap="xs" justify="center" align="start">
+        <Title order={1} c="indigo">
+          Sergio López Sánchez
+        </Title>
+
+        <Title order={2} c="dimmed">
+          Full Stack Developer
+        </Title>
+      </Stack>
+
+
+      <Text size="lg">
+        Ingeniero en Sistemas con experiencia en el desarrollo de aplicaciones web y sistemas internos, enfocados en la automatización de procesos administrativos y operativos. Especializado en backend, bases de datos e integración de sistemas, con enfoque en eficiencia, calidad del código y mejora continua de procesos de negocio.
       </Text>
 
       <Group gap="xs">
@@ -34,7 +35,7 @@ export default function Home() {
           className="whitespace-nowrap"
           onClick={() => router.push("/contact")}
         >
-          Contactame
+          Contáctame
         </Button>
         <Button
           variant="subtle"
@@ -43,38 +44,10 @@ export default function Home() {
           className="whitespace-nowrap"
           onClick={() => router.push("/about")}
         >
-          Más sobre mi
+          Más sobre mí
         </Button>
       </Group>
 
-      <Group gap="xs">
-        <Text size="lg" c="dimmed">Tambien puedes ver</Text>
-        <ActionIcon
-          component="a"
-          href="https://www.linkedin.com/in/sergio-lopez-103013205"
-          target="_blank"
-          rel="noopener noreferrer"
-          variant="subtle"
-          size="xl"
-          radius="md"
-          aria-label="LinkedIn"
-        >
-          <IconBrandLinkedin size={28} />
-        </ActionIcon>
-
-        <ActionIcon
-          component="a"
-          href="https://github.com/SergioLopez4182"
-          target="_blank"
-          rel="noopener noreferrer"
-          variant="subtle"
-          size="xl"
-          radius="md"
-          aria-label="Github"
-        >
-          <IconBrandGithub size={28} />
-        </ActionIcon>
-      </Group>
-    </Stack>
+    </PageLayout>
   );
 }

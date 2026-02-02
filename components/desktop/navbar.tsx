@@ -27,6 +27,14 @@ export default function DesktopNavbar() {
     const router = useRouter();
     const pathname = usePathname();
 
+    const calculateActive = (url: string) => {
+        if (url === "/") {
+            return pathname === "/" ? "filled" : "subtle";
+        }
+
+        return pathname.startsWith(url) ? "filled" : "subtle";
+    };
+
     return (
         <nav className="px-6 md:px-8 h-16 flex items-center justify-between bg-white">
             <Image
@@ -42,11 +50,7 @@ export default function DesktopNavbar() {
                     sections.map((section, i) => (
                         <Button
                             key={i}
-                            variant={
-                                pathname === section.url 
-                                    ? 'filled'
-                                    : 'subtle'
-                            }
+                            variant={calculateActive(section.url)}
                             size="lg"
                             radius='md'
                             className="whitespace-nowrap"

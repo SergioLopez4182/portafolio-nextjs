@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ColorSchemeScript, MantineColorScheme } from "@mantine/core";
 import { cookies } from "next/headers";
 import BaseProvider from "@/components/providers/base-provider";
-import BaseLayout from "@/components/base-layout";
+import BaseLayout from "@/components/layouts/base-layout";
 import "./globals.css";
 
 const geistSans = Geist({

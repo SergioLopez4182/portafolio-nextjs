@@ -1,11 +1,11 @@
 import DesktopNavbar from "@/components/desktop/navbar";
 import MobileNavbar from "@/components/mobile/navbar";
 
-export default function BaseLayout({
-    children,
-}: {
+interface Props {
     children: React.ReactNode;
-}) {
+};
+
+export default function BaseLayout({ children }: Props) {
     return (
         <div className="min-h-screen flex flex-col bg-gray-200 dark:bg-black">
 

@@ -11,18 +11,17 @@ export default function Projects() {
             <Avatar variant="otulined" color="cyan" radius="xl" size="lg">SL</Avatar>
 
             <Stack gap={0} justify="center" align="center">
-                <Title order={1} ta="center">Sergio López Sánchez</Title>
+                <Title order={1} c="indigo">Sergio López Sánchez</Title>
                 <Text size="xl" c="dimmed">Full Stack Developer</Text>
             </Stack>
 
             <Group justify="space-between">
                 <Stack gap={0}>
-                    <Text size="md">Enviame un correo</Text>
+                    <Text size="md">Envíame un correo</Text>
                     <Text size="md" c="dimmed">sergiols180798@gmail.com</Text>
                 </Stack>
 
                 <Divider size="sm" orientation="vertical" color="gray" />
-
                 <Group gap="xs">
                     <ActionIcon
                         component="a"
@@ -50,7 +49,6 @@ export default function Projects() {
                         <IconBrandGithub size={28} />
                     </ActionIcon>
                 </Group>
-
             </Group>
         </Stack>
     );

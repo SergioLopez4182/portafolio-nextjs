@@ -4,11 +4,12 @@ import { Title, Stack, Text, Group, ActionIcon, HoverCard } from "@mantine/core"
 import { IconAlertCircle } from '@tabler/icons-react';
 import { projects } from '@/data/projects';
 import ProjectCard from "@/components/projects/project-card";
+import PageLayout from "@/components/layouts/page-layout";
 
 export default function Projects() {
 
     return (
-        <Stack className="w-[75%] 2xl:w-[50%] mt-4" gap="lg">
+        <PageLayout>
             <Stack>
                 <Group gap="xs">
                     <Title order={1}>Proyectos</Title>
@@ -21,27 +22,26 @@ export default function Projects() {
                         </HoverCard.Target>
 
                         <HoverCard.Dropdown>
+                            <Text size="sm" fw={700}>Disclaimer</Text>
                             <Text size="sm" c="dimmed">
-                                La información presentada en este documento ha sido parcialmente anonimizada y 
-                                ajustada con el objetivo de no divulgar información sensible de las empresas y 
-                                clientes con los que he colaborado.
+                                La información presentada en este documento ha sido parcialmente anonimizada y ajustada con el objetivo de no divulgar información sensible de las empresas y clientes con los que he colaborado.
                             </Text>
                         </HoverCard.Dropdown>
                     </HoverCard>
                 </Group>
 
                 <Text size="lg" c="dimmed">
-                    Selección de proyectos donde participé en diseño, desarrollo e implementación de soluciones reales.
+                    Selección de proyectos en los que participé en el diseño, desarrollo e implementación de soluciones reales.
                 </Text>
             </Stack>
 
-            <Stack align="strech">
+            <Stack align="strech" className="w-full">
                 {
                     projects.map((p, i) => (
                         <ProjectCard key={i} project={p} />
                     ))
                 }
             </Stack>
-        </Stack>
+        </PageLayout>
     );
 }
