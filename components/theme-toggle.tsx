@@ -3,12 +3,14 @@
 import { ActionIcon, Button, useMantineColorScheme } from "@mantine/core";
 import { IconCaretDownFilled } from "@tabler/icons-react";
 import { Sun, Moon } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface Props {
     isMobile: boolean;
 }
 
 export default function ThemeToggle({ isMobile }: Props) {
+    const t = useTranslations("navbar");
     const { colorScheme, setColorScheme } = useMantineColorScheme();
 
     const toggle = () => {
@@ -32,7 +34,7 @@ export default function ThemeToggle({ isMobile }: Props) {
                 size="compact-lg"
                 rightSection={colorScheme === "dark" ? <Sun size={24} /> : <Moon size={24} />}
             >
-                {colorScheme === "dark" ? "Tema claro" : "Tema oscuro"}
+                {colorScheme === "dark" ? t("light_mode") : t("dark_mode")}
             </Button>
         );
     } else {

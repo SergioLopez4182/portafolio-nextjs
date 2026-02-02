@@ -1,6 +1,9 @@
 {
+  "title": "Secciones",
   "home": "Inicio",
   "projects": "Proyectos",
   "about": "Sobre mí",
-  "contact": "Contacto"
+  "contact": "Contacto",
+  "dark_mode": "Tema oscuro",
+  "light_mode": "Tema claro"
 }

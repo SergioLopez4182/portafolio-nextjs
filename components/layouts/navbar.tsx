@@ -1,37 +1,36 @@
-'use client';
+"use client";
 
-import { Button, Stack, Drawer, ActionIcon, Text, Group, Divider } from "@mantine/core";
+import { Button, Stack, Drawer, Text, Group, Divider, Burger } from "@mantine/core";
 import Image from "next/image";
-import { useRouter, usePathname } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useRouter, usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { routing } from "@/i18n/routing";
-import LanguageSwitcher from '@/components/language-switcher';
-import { useDisclosure } from '@mantine/hooks';
-import { IconMenu2 } from '@tabler/icons-react';
+import LanguageSwitcher from "@/components/language-switcher";
+import { useDisclosure } from "@mantine/hooks";
 import ThemeToggle from "../theme-toggle";
 
 export default function Navbar() {
-    const t = useTranslations('navbar');
+    const t = useTranslations("navbar");
     const router = useRouter();
     const pathname = usePathname();
-    const [opened, { open, close }] = useDisclosure(false);
+    const [opened, { close, toggle }] = useDisclosure(false);
 
     const sections = [
         {
-            name: t('home'),
-            url: '/',
+            name: t("home"),
+            url: "/",
         },
         {
-            name: t('projects'),
-            url: '/projects',
+            name: t("projects"),
+            url: "/projects",
         },
         {
-            name: t('about'),
-            url: '/about',
+            name: t("about"),
+            url: "/about",
         },
         {
-            name: t('contact'),
-            url: '/contact',
+            name: t("contact"),
+            url: "/contact",
         },
     ];
 
@@ -39,10 +38,10 @@ export default function Navbar() {
     const normalizedPathname = (() => {
         type Locale = (typeof routing.locales)[number];
 
-        const segments = pathname.split('/').filter(Boolean);
+        const segments = pathname.split("/").filter(Boolean);
 
         if (segments.length && routing.locales.includes(segments[0] as Locale)) {
-            return '/' + segments.slice(1).join('/');
+            return "/" + segments.slice(1).join("/");
         }
 
         return pathname;
@@ -70,7 +69,7 @@ export default function Navbar() {
 
             {/* Desktop */}
             <div className="hidden md:block">
-                <Group gap='xs'>
+                <Group gap="xs">
                     <LanguageSwitcher isMobile={false} />
                     <ThemeToggle isMobile={false} />
                     <Divider size="sm" my="sm" orientation="vertical" color="gray" />
@@ -80,7 +79,7 @@ export default function Navbar() {
                                 key={i}
                                 variant={calculateActive(section.url, false)}
                                 size="compact-lg"
-                                radius='md'
+                                radius="md"
                                 className="whitespace-nowrap"
                                 onClick={() => router.push(section.url)}
                             >
@@ -96,9 +95,9 @@ export default function Navbar() {
                 <Drawer
                     opened={opened}
                     onClose={close}
-                    title={<Text size="xl" fw={700}>Navegación</Text>}
+                    title={<Text size="xl" fw={700}>{t('title')}</Text>}
                 >
-                    <Stack gap='xs'>
+                    <Stack gap="xs">
                         {
                             sections.map((section, i) => (
                                 <Button
@@ -122,14 +121,12 @@ export default function Navbar() {
                     </Stack>
                 </Drawer>
 
-                <ActionIcon
-                    variant="subtle"
-                    size="lg"
-                    onClick={open}
-                    aria-label="open-navigation-drawer"
-                >
-                    <IconMenu2 size={28} stroke={2} />
-                </ActionIcon>
+                <Burger
+                    size="md"
+                    opened={opened}
+                    onClick={toggle}
+                    aria-label="toggle-navigation-drawer"
+                />
             </div>
         </nav>
     );

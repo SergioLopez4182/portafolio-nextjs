@@ -1,6 +1,9 @@
 {
+  "title": "Sections",
   "home": "Home",
   "projects": "Projects",
   "about": "About me",
-  "contact": "Contact"
+  "contact": "Contact",
+  "dark_mode": "Dark mode",
+  "light_mode": "Light mode"
 }
