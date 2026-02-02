@@ -3,36 +3,53 @@
 import { Button, Group } from "@mantine/core";
 import Image from "next/image";
 import { useRouter, usePathname } from 'next/navigation';
-
-const sections = [
-    {
-        name: 'Inicio',
-        url: '/',
-    },
-    {
-        name: 'Proyectos',
-        url: '/projects',
-    },
-    {
-        name: 'Sobre mi',
-        url: '/about',
-    },
-    {
-        name: 'Contacto',
-        url: '/contact',
-    },
-];
+import { useTranslations } from 'next-intl';
+import { routing } from "@/i18n/routing";
 
 export default function DesktopNavbar() {
+    const t = useTranslations('navbar');
     const router = useRouter();
     const pathname = usePathname();
 
-    const calculateActive = (url: string) => {
-        if (url === "/") {
-            return pathname === "/" ? "filled" : "subtle";
+    const sections = [
+        {
+            name: t('home'),
+            url: '/',
+        },
+        {
+            name: t('projects'),
+            url: '/projects',
+        },
+        {
+            name: t('about'),
+            url: '/about',
+        },
+        {
+            name: t('contact'),
+            url: '/contact',
+        },
+    ];
+
+
+    const normalizedPathname = (() => {
+        type Locale = (typeof routing.locales)[number];
+
+        const segments = pathname.split('/').filter(Boolean);
+
+        if (segments.length && routing.locales.includes(segments[0] as Locale)) {
+            return '/' + segments.slice(1).join('/');
         }
 
-        return pathname.startsWith(url) ? "filled" : "subtle";
+        return pathname;
+    })();
+
+    const calculateActive = (url: string) => {
+        if (url === "/")
+            return normalizedPathname === "/" ? "filled" : "subtle";
+
+        return normalizedPathname.startsWith(url)
+            ? "filled"
+            : "subtle";
     };
 
     return (
