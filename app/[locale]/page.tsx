@@ -4,27 +4,27 @@ import { ActionIcon, TextInput, PasswordInput, Button, Paper, Title, Text, Check
 import { useRouter } from "next/navigation";
 import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
 import PageLayout from "@/components/layouts/page-layout";
-
+import { useTranslations } from "next-intl";
 
 export default function Home() {
   const router = useRouter();
+  const t = useTranslations('');
 
   return (
     <PageLayout>
-
       <Stack gap="xs" justify="center" align="start">
         <Title order={1} c="indigo">
-          Sergio López Sánchez
+          {t('common.full_name')}
         </Title>
 
         <Title order={2} c="dimmed">
-          Full Stack Developer
+          {t('common.role')}
         </Title>
       </Stack>
 
 
       <Text size="lg">
-        Ingeniero en Sistemas con experiencia en el desarrollo de aplicaciones web y sistemas internos, enfocados en la automatización de procesos administrativos y operativos. Especializado en backend, bases de datos e integración de sistemas, con enfoque en eficiencia, calidad del código y mejora continua de procesos de negocio.
+        {t('home.summary')}
       </Text>
 
       <Group gap="xs">
@@ -35,7 +35,7 @@ export default function Home() {
           className="whitespace-nowrap"
           onClick={() => router.push("/contact")}
         >
-          Contáctame
+          {t('home.contact_me')}
         </Button>
         <Button
           variant="subtle"
@@ -44,7 +44,7 @@ export default function Home() {
           className="whitespace-nowrap"
           onClick={() => router.push("/about")}
         >
-          Más sobre mí
+          {t('home.more_about_me')}
         </Button>
       </Group>
 

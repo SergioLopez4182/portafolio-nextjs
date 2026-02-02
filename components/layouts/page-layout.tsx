@@ -1,6 +1,3 @@
-import DesktopNavbar from "@/components/desktop/navbar";
-import MobileNavbar from "@/components/mobile/navbar";
-
 interface Props {
     children: React.ReactNode;
 };

@@ -1,7 +1,10 @@
 import { ActionIcon, Avatar, Paper, Title, Text, Stack, Group, Divider } from "@mantine/core";
-import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
+import { IconBrandLinkedin, IconBrandGithub } from "@tabler/icons-react";
+import { useTranslations } from "next-intl";
 
 export default function Projects() {
+    const t = useTranslations("");
+
     return (
         <Stack
             align="center"
@@ -11,17 +14,18 @@ export default function Projects() {
             <Avatar variant="otulined" color="cyan" radius="xl" size="lg">SL</Avatar>
 
             <Stack gap={0} justify="center" align="center">
-                <Title order={1} c="indigo">Sergio López Sánchez</Title>
-                <Text size="xl" c="dimmed">Full Stack Developer</Text>
+                <Title order={1} c="indigo">{t("common.full_name")}</Title>
+                <Text size="xl" c="dimmed">{t("common.role")}</Text>
             </Stack>
 
             <Group justify="space-between">
                 <Stack gap={0}>
-                    <Text size="md">Envíame un correo</Text>
-                    <Text size="md" c="dimmed">sergiols180798@gmail.com</Text>
+                    <Text size="md">{t("contact.send_me")}</Text>
+                    <Text size="md" c="dimmed">{t("common.email")}</Text>
                 </Stack>
 
-                <Divider size="sm" orientation="vertical" color="gray" />
+                <Divider size="sm" my="sm" orientation="vertical" color="gray" />
+
                 <Group gap="xs">
                     <ActionIcon
                         component="a"

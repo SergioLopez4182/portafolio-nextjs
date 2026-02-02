@@ -1,9 +1,14 @@
 "use client";
 
-import { ActionIcon, useMantineColorScheme } from "@mantine/core";
+import { ActionIcon, Button, useMantineColorScheme } from "@mantine/core";
+import { IconCaretDownFilled } from "@tabler/icons-react";
 import { Sun, Moon } from "lucide-react";
 
-export default function ThemeToggle() {
+interface Props {
+    isMobile: boolean;
+}
+
+export default function ThemeToggle({ isMobile }: Props) {
     const { colorScheme, setColorScheme } = useMantineColorScheme();
 
     const toggle = () => {
@@ -19,16 +24,27 @@ export default function ThemeToggle() {
         document.cookie = `mantine-color-scheme=${next}; path=/; max-age=31536000`;
     };
 
-    return (
-        <ActionIcon
-            onClick={toggle}
-            variant="subtle"
-            size="lg"
-        
-            radius='md'
-            aria-label="Cambiar tema"
-        >
-            {colorScheme === "dark" ? <Sun size={24} /> : <Moon size={24} />}
-        </ActionIcon>
-    );
+    if (isMobile) {
+        return (
+            <Button
+                onClick={toggle}
+                variant="outline"
+                size="compact-lg"
+                rightSection={colorScheme === "dark" ? <Sun size={24} /> : <Moon size={24} />}
+            >
+                {colorScheme === "dark" ? "Tema claro" : "Tema oscuro"}
+            </Button>
+        );
+    } else {
+        return (
+            <ActionIcon
+                onClick={toggle}
+                variant="subtle"
+                size="xl"
+                aria-label="Cambiar tema"
+            >
+                {colorScheme === "dark" ? <Sun size={24} /> : <Moon size={24} />}
+            </ActionIcon>
+        );
+    }
 }

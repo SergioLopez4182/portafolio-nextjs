@@ -1,0 +1,68 @@
+{
+    "page": {
+        "title": "About Me",
+        "body": "Hi, I'm Sergio, a Full Stack developer passionate about technology, video games, music, and fitness. I've mainly worked on projects where software directly impacts real-world processes such as operations, security, transportation, and the digitalization of physical workflows."
+    },
+    "background": {
+        "title": "Professional Background",
+        "body": "I graduated from Instituto Tecnológico de Saltillo in 2021 with a degree in Computer Systems Engineering. Before graduating, I joined Introid Inc. as a data engineer on a distributed systems project. I later continued with the team as a Full Stack developer, working across frontend, backend, databases, and infrastructure. After more than three years at Introid, I joined Tienda Tec, where I worked as a Full Stack developer, supporting platforms across different .NET versions and building custom solutions for clients. I participated in requirements gathering, system development, and deployment."
+    },
+    "tech": {
+        "title": "Technologies",
+        "body": "",
+        "frontend": {
+            "title": "Frontend",
+            "stack": [
+                "React.js",
+                "Next.js",
+                "Tailwind CSS",
+                "Zustand",
+                "Electron",
+                "Flutter"
+            ]
+        },
+        "backend": {
+            "title": "Backend",
+            "stack": [
+                "REST APIs",
+                "WebSockets",
+                "Node.js",
+                "Express.js",
+                "Django"
+            ]
+        },
+        "database": {
+            "title": "Databases",
+            "stack": [
+                "PostgreSQL",
+                "SQL Server",
+                "MySQL",
+                "MongoDB"
+            ]
+        },
+        "infrastructure": {
+            "title": "Infrastructure",
+            "stack": [
+                "AWS (EC2, S3)",
+                "Azure (basic CI/CD)",
+                "Vercel",
+                "Git / GitHub"
+            ]
+        }
+    },
+    "methodology": {
+        "title": "Work Methodology",
+        "body": "I like to start by fully understanding the problem, including interaction with end users and requirements gathering. I prefer simple yet robust solutions, focused on maintainability and scalability. I work iteratively, seeking early feedback from the team or client, which helps identify risks and opportunities quickly. I value the use of best practices, standards, and tools that facilitate collaborative work."
+    },
+    "interests": {
+        "title": "Professional Interests",
+        "body": "I am interested in continuing to deepen my knowledge in:",
+        "list": [
+            "Advanced frontend development",
+            "Testing and automation",
+            "Advanced backend development",
+            "Database administration and design",
+            "DevOps and deployment"
+        ]
+    }
+}

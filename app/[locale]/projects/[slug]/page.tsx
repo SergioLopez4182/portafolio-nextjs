@@ -22,7 +22,7 @@ export default async function ProjectDetailPage({ params }: {
                     size="lg"
                     aria-label="Github"
                 >
-                    <IconArrowLeft color='black' style={{ width: "100%", height: "100%" }} stroke={2} />
+                    <IconArrowLeft style={{ width: "100%", height: "100%" }} stroke={2} />
                 </ActionIcon>
                 <Stack gap={0}>
                     <Title order={1}>{project.title}</Title>

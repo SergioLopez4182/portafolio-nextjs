@@ -1,5 +1,7 @@
 {
-  "HomePage": {
-    "title": "Hola mundo!"
-  }
+  "full_name": "Sergio López Sánchez",
+  "role": "Full Stack Developer",
+  "email": "sergiols180798@gmail.com",
+  "location": "Saltillo, México",
+  "year": "2026"
 }

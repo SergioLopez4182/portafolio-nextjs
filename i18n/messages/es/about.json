@@ -1,0 +1,68 @@
+{
+    "page": {
+        "title": "Sobre mí",
+        "body": "Hola, soy Sergio, desarrollador Full Stack apasionado por la tecnología, los videojuegos, la música y el ejercicio. He trabajado principalmente en proyectos donde el software impacta procesos reales: operación, seguridad, transporte y digitalización de flujos físicos."
+    },
+    "background": {
+        "title": "Background profesional",
+        "body": "Egresé del Instituto Tecnológico de Saltillo en 2021 como Ingeniero en Sistemas Computacionales. Antes de graduarme, me uní a Introid Inc. como ingeniero de datos en un proyecto de sistemas distribuidos. Posteriormente, continué con el equipo como desarrollador Full Stack, trabajando con frontend, backend, bases de datos e infraestructura. Después de más de tres años en Introid, me uní a Tienda Tec, donde trabajé como desarrollador Full Stack, dando soporte a plataformas en distintas versiones de .NET y desarrollando soluciones a la medida para clientes. Participé en el levantamiento de requerimientos, desarrollo y despliegue de sistemas."
+    },
+    "tech": {
+        "title": "Tecnologías",
+        "body": "",
+        "frontend": {
+            "title": "Frontend",
+            "stack": [
+                "React.js",
+                "Next.js",
+                "Tailwind CSS",
+                "Zustand",
+                "Electron",
+                "Flutter"
+            ]
+        },
+        "backend": {
+            "title": "Backend",
+            "stack": [
+                "APIs REST",
+                "WebSockets",
+                "Node.js",
+                "Express.js",
+                "Django"
+            ]
+        },
+        "database": {
+            "title": "Bases de datos",
+            "stack": [
+                "PostgreSQL",
+                "SQL Server",
+                "MySQL",
+                "MongoDB"
+            ]
+        },
+        "infrastructure": {
+            "title": "Infraestructura",
+            "stack": [
+                "AWS (EC2, S3)",
+                "Azure (CI/CD básico)",
+                "Vercel",
+                "Git / GitHub"
+            ]
+        }
+    },
+    "methodology": {
+        "title": "Metodología de trabajo",
+        "body": "Me gusta comenzar entendiendo a fondo el problema, incluyendo la interacción con usuarios finales y el levantamiento de requerimientos. Prefiero soluciones simples pero robustas, enfocadas en mantenibilidad y escalabilidad. Trabajo de forma iterativa, buscando feedback temprano del equipo o del cliente, lo que permite detectar riesgos y oportunidades rápidamente. Valoro el uso de buenas prácticas, estándares y herramientas que faciliten el trabajo colaborativo."
+    },
+    "interests": {
+        "title": "Intereses profesionales",
+        "body": "Estoy interesado en seguir profundizando en:",
+        "list": [
+            "Desarrollo frontend avanzado",
+            "Desarrollo backend avanzado",
+            "Administración y diseño de bases de datos",
+            "Testing y automatización",
+            "DevOps y despliegue de sistemas"
+        ]
+    }
+}
