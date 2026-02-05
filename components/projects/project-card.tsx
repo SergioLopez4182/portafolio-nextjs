@@ -1,5 +1,5 @@
 import { useRouter } from 'next/navigation';
-import { Project } from '@/data/projects';
+import { Project } from '@/types/project';
 import { Card, Image, Text, Badge, Button, Group, Stack } from '@mantine/core';
 
 interface Props {

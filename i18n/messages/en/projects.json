@@ -5,5 +5,58 @@
         "title": "Disclaimer",
         "body": "The information presented in this document has been partially anonymized and adjusted to avoid disclosing sensitive information from the companies and clients I have collaborated with."
     },
-    "go_back": "Go back"
+    "go_back": "Go back",
+    "items": [
+        {
+            "slug": "work-permissions-app",
+            "title": "Sistema de gestión de permisos de trabajo",
+            "description": "Digitalización del proceso de permisos en centro comercial.",
+            "period": "OCT 2024 - MAR 2025",
+            "role": {
+                "main": "Desarrollador Frontend",
+                "description": "Participé como Full Stack Developer, con mayor enfoque en el desarrollo frontend",
+                "responsabilities": [
+                    "Diseño de la arquitectura del sistema",
+                    "Diseño de base de datos en PostgreSQL",
+                    "Escritura de queries y stored procedures",
+                    "Apoyo en el desarrollo de endpoints en el backend",
+                    "Implementaci",
+                    "Testing funcional y capacitación al personal operativo"
+                ]
+            },
+            "language": [
+                "TypeScript"
+            ],
+            "stack": [
+                "Next.js",
+                "Express.js",
+                "React",
+                "Azure",
+                "PostgreSQL"
+            ],
+            "context": [
+                "Sistema desarrollado para digitalizar y centralizar la gestión de permisos de trabajo dentro de un centro comercial. El proceso previo era manual y por correo electrónico, generando retrasos, falta de trazabilidad y errores operativos. El sistema permite a los locatarios solicitar permisos (ingreso de proveedores, instalación de mobiliario, adecuaciones del local) y a los administradores validar, rechazar y dar seguimiento a dichas solicitudes mediante flujos controlados.",
+                "El proyecto surgió a partir de la necesidad del cliente de digitalizar y centralizar el proceso de gestión de permisos de trabajo dentro de un centro comercial. Previamente, las solicitudes se realizaban de forma manual y por correo, lo que generaba retrasos, falta de trazabilidad y errores operativos.",
+                "El sistema debía permitir a los locatarios solicitar permisos para distintas actividades (ingreso de proveedores, instalación de mobiliario, adecuaciones del local, etc.), así como a los administradores validar, rechazar y dar seguimiento a dichas solicitudes.",
+                "El proyecto incluyó levantamiento de requerimientos, definición de arquitectura y stack tecnológico, desarrollo, pruebas internas y en sitio con el cliente, documentación y capacitación a usuarios finales."
+            ],
+            "tecnical_challenges": {
+                "description": "",
+                "items": [
+                    "Definir claramente roles y permisos desde base de datos hasta frontend",
+                    "Sincronizar la lógica de autorización entre backend y frontend",
+                    "Garantizar que las vistas, acciones y formularios se habilitarán dinámicamente según el rol del usuario"
+                ]
+            },
+            "results": {
+                "description": "El sistema se encuentra estable en producción y permitió:",
+                "items": [
+                    "Centralizar la gestión de permisos de trabajo",
+                    "Reducir significativamente los tiempos de respuesta administrativos",
+                    "Mejorar la trazabilidad y control del proceso",
+                    "Eliminar dependencias de procesos manuales y correos electrónicos"
+                ]
+            }
+        }
+    ]
 }
