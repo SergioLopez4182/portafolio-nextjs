@@ -6,6 +6,7 @@
         "body": "La información presentada en este documento ha sido parcialmente anonimizada y ajustada con el objetivo de no divulgar información sensible de las empresas y clientes con los que he colaborado."
     },
     "labels": {
+        "demo": "Ver demo",
         "languages": "Lenguajes de programación",
         "stack": {
             "core": "Stack principal",

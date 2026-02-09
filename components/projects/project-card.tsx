@@ -12,20 +12,17 @@ export default function ProjectCard({ project }: Props) {
     return (
         <article
             className={
-                "flex border-2 rounded-lg p-4 h-fit cursor-pointer border-gray-900 " +
+                "flex flex-col border-2 rounded-lg p-4 h-fit cursor-pointer border-gray-400 " +
                 "hover:border-indigo-500 hover:bg-gray-300" +
                 ""
             }
             onClick={() => router.push('/projects/' + project.slug)}
         >
-            <section className="w-1/4">
-                <Text size="sm" fw={700} c="dimmed">{project.period}</Text>
-            </section>
-
-            <section className="w-3/4">
-                <Stack gap="sm">
+            <section className="">
+                <Stack gap={0}>
+                    <Text size="sm" fw={700} c="dimmed">{project.period}</Text>
                     <Text fw={700}>{project.title}</Text>
-                    <Text>{project.description}</Text>
+                    <Text c="dimmed">{project.description}</Text>
                     <Group gap="xs">
                         {
                             project.stack.core.map((s, i) => (

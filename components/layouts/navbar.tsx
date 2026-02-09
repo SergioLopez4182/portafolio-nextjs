@@ -68,7 +68,7 @@ export default function Navbar() {
             />
 
             {/* Desktop */}
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
                 <Group gap="xs">
                     <LanguageSwitcher isMobile={false} />
                     <ThemeToggle isMobile={false} />
@@ -91,7 +91,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile */}
-            <div className="block md:hidden">
+            <div className="block lg:hidden">
                 <Drawer
                     opened={opened}
                     onClose={close}
