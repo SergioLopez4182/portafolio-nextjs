@@ -1,8 +1,8 @@
 "use client";
 
 import { ActionIcon, Button, useMantineColorScheme } from "@mantine/core";
-import { IconCaretDownFilled } from "@tabler/icons-react";
-import { Sun, Moon } from "lucide-react";
+import { IconCaretDownFilled, IconMoonFilled, IconSunFilled } from "@tabler/icons-react";
+
 import { useTranslations } from "next-intl";
 
 interface Props {
@@ -32,7 +32,7 @@ export default function ThemeToggle({ isMobile }: Props) {
                 onClick={toggle}
                 variant="outline"
                 size="compact-lg"
-                rightSection={colorScheme === "dark" ? <Sun size={24} /> : <Moon size={24} />}
+                rightSection={colorScheme === "dark" ? <IconSunFilled size={24} /> : <IconMoonFilled size={24} />}
             >
                 {colorScheme === "dark" ? t("light_mode") : t("dark_mode")}
             </Button>
@@ -45,7 +45,7 @@ export default function ThemeToggle({ isMobile }: Props) {
                 size="xl"
                 aria-label="Cambiar tema"
             >
-                {colorScheme === "dark" ? <Sun size={24} /> : <Moon size={24} />}
+                {colorScheme === "dark" ? <IconSunFilled size={24} /> : <IconMoonFilled size={24} />}
             </ActionIcon>
         );
     }

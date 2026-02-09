@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: Props) {
                     <Text>{project.description}</Text>
                     <Group gap="xs">
                         {
-                            project.stack.map((s, i) => (
+                            project.stack.core.map((s, i) => (
                                 <Badge key={i} variant="light">{s}</Badge>
                             ))
                         }

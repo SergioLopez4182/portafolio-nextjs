@@ -3,5 +3,8 @@
   "role": "Full Stack Developer",
   "email": "sergiols180798@gmail.com",
   "location": "Saltillo, México",
-  "year": "2026"
+  "year": "2026",
+  "buttons": {
+    "go_back": "Go back"
+  }
 }

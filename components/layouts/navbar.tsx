@@ -5,9 +5,9 @@ import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { routing } from "@/i18n/routing";
-import LanguageSwitcher from "@/components/language-switcher";
+import LanguageSwitcher from "@/components/buttons/language-switcher";
 import { useDisclosure } from "@mantine/hooks";
-import ThemeToggle from "../theme-toggle";
+import ThemeToggle from "../buttons/theme-toggle";
 
 export default function Navbar() {
     const t = useTranslations("navbar");

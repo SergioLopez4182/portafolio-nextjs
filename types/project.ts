@@ -9,7 +9,10 @@ export type Project = {
         responsabilities: string[];
     };
     language: string[];
-    stack: string[];
+    stack: {
+        core: string[];
+        libraries: string[];
+    };
     context: string[];
     tecnical_challenges: {
         description: string;

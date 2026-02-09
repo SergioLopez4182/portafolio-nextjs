@@ -1,6 +1,6 @@
 {
   "name": "portafolio-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -16,7 +16,6 @@
     "@mantine/hooks": "^8.3.10",
     "@mantine/notifications": "^8.3.10",
     "@tabler/icons-react": "^3.36.1",
-    "lucide-react": "^0.561.0",
     "next": "^16.1.6",
     "next-intl": "^4.8.2",
     "react": "19.2.1",
