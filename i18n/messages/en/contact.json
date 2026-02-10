@@ -1,3 +1,9 @@
 {
-    "send_me": "Send me an email"
+  "page": {
+    "title": "Contact me",
+    "body": "I’ll be happy to answer your questions!"
+  },
+  "send_me": "Send me an email",
+  "copy_email": "Copy email",
+  "email_copied": "Email copied"
 }

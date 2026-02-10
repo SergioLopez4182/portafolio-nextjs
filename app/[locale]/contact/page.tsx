@@ -1,32 +1,95 @@
-import { ActionIcon, Avatar, Paper, Title, Text, Stack, Group, Divider } from "@mantine/core";
-import { IconBrandLinkedin, IconBrandGithub } from "@tabler/icons-react";
-import { useTranslations } from "next-intl";
+"use client";
 
-export default function Projects() {
+import {
+    ActionIcon,
+    Title,
+    Text,
+    Stack,
+    Group,
+    Tooltip,
+    Button
+} from "@mantine/core";
+import {
+    IconBrandLinkedin,
+    IconBrandGithub,
+    IconCopy,
+    IconCheck
+} from "@tabler/icons-react";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
+
+export default function Contact() {
     const t = useTranslations("");
+    const [copied, setCopied] = useState(false);
+
+    const email = t("common.email");
+
+    const handleCopyEmail = async () => {
+        await navigator.clipboard.writeText(email);
+        setCopied(true);
+
+        setTimeout(() => setCopied(false), 2000);
+    };
 
     return (
         <Stack
-            align="center"
             justify="center"
-            p="lg"
+            align="center"
+            gap="xl"
+            maw={480}
+            mx="auto"
+            px="xl"
         >
-            <Avatar variant="otulined" color="cyan" radius="xl" size="lg">SL</Avatar>
-
-            <Stack gap={0} justify="center" align="center">
-                <Title order={1} c="indigo">{t("common.full_name")}</Title>
-                <Text size="xl" c="dimmed">{t("common.role")}</Text>
+            <Stack align="center" gap="xs">
+                <Title order={1}>{t("contact.page.title")}</Title>
+                <Text size="lg" c="dimmed" ta="center">
+                    {t("contact.page.body")}
+                </Text>
             </Stack>
 
-            <Group justify="space-between">
-                <Stack gap={0}>
-                    <Text size="md">{t("contact.send_me")}</Text>
-                    <Text size="md" c="dimmed">{t("common.email")}</Text>
-                </Stack>
+            <Stack gap={0} align="center">
+                <Title order={2} c="indigo">
+                    {t("common.full_name")}
+                </Title>
+                <Text size="xl" c="dimmed">
+                    {t("common.role")}
+                </Text>
+            </Stack>
 
-                <Divider size="sm" my="sm" orientation="vertical" color="gray" />
+            <Group gap="xs">
+                <Button
+                    component="a"
+                    href={`mailto:${email}`}
+                    size="md"
+                    radius="md"
+                >
+                    {t("contact.send_me")}
+                </Button>
 
-                <Group gap="xs">
+                <Tooltip
+                    label={
+                        copied
+                            ? t("contact.email_copied")
+                            : t("contact.copy_email")
+                    }
+                >
+                    <ActionIcon
+                        variant="subtle"
+                        size="xl"
+                        aria-label="copy-email"
+                        onClick={handleCopyEmail}
+                    >
+                        {copied ? (
+                            <IconCheck size={28} />
+                        ) : (
+                            <IconCopy size={28} />
+                        )}
+                    </ActionIcon>
+                </Tooltip>
+            </Group>
+
+            <Group gap="xs">
+                <Tooltip label="LinkedIn">
                     <ActionIcon
                         component="a"
                         href="https://www.linkedin.com/in/sergio-lopez-103013205"
@@ -39,7 +102,9 @@ export default function Projects() {
                     >
                         <IconBrandLinkedin size={28} />
                     </ActionIcon>
+                </Tooltip>
 
+                <Tooltip label="GitHub">
                     <ActionIcon
                         component="a"
                         href="https://github.com/SergioLopez4182"
@@ -48,11 +113,11 @@ export default function Projects() {
                         variant="subtle"
                         size="xl"
                         radius="md"
-                        aria-label="Github"
+                        aria-label="GitHub"
                     >
                         <IconBrandGithub size={28} />
                     </ActionIcon>
-                </Group>
+                </Tooltip>
             </Group>
         </Stack>
     );

@@ -1,6 +1,6 @@
 "use client";
 
-import { Title, Text, Stack, Divider, List, Card, Group, Badge, SimpleGrid } from "@mantine/core";
+import { Title, Text, List, SimpleGrid } from "@mantine/core";
 import PageLayout from "@/components/layouts/page-layout";
 import { useTranslations } from "next-intl";
 import { TechCard } from "@/components/about/tech-card";
@@ -20,8 +20,6 @@ export default function About() {
             <Text size="lg" c="dimmed">
                 {t('background.body')}
             </Text>
-
-            <Divider />
 
             <Title order={1} ta="center">{t('tech.title')}</Title>
 
@@ -46,14 +44,10 @@ export default function About() {
                 />
             </SimpleGrid>
 
-            <Divider />
-
             <Title order={1} ta="center">{t('methodology.title')}</Title>
             <Text size="lg" c="dimmed">
                 {t('methodology.body')}
             </Text>
-
-            <Divider />
 
             <Title order={1} ta="center">{t('interests.title')}</Title>
 
