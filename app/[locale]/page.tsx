@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <PageLayout>
-      <Stack gap="xs" justify="center" align="start">
+      <Stack gap={0} justify="center" align="start">
         <Title order={1} c="indigo">
           {t('common.full_name')}
         </Title>
@@ -22,7 +22,6 @@ export default function Home() {
         </Title>
       </Stack>
 
-
       <Text size="lg">
         {t('home.summary')}
       </Text>
@@ -30,7 +29,7 @@ export default function Home() {
       <Group gap="xs">
         <Button
           variant="filled"
-          size="lg"
+          size="md"
           radius="md"
           className="whitespace-nowrap"
           onClick={() => router.push("/contact")}
@@ -39,7 +38,7 @@ export default function Home() {
         </Button>
         <Button
           variant="subtle"
-          size="lg"
+          size="md"
           radius="md"
           className="whitespace-nowrap"
           onClick={() => router.push("/about")}

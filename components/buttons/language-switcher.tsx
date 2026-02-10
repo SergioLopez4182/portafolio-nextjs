@@ -31,8 +31,8 @@ export default function LanguageSwitcher({isMobile} : Props) {
             <Menu.Target>
                 <Button
                     variant={isMobile ? "outline" : "subtle"}
-                    size="compact-lg"
-                    rightSection={<IconCaretDownFilled />}
+                    size="compact-md"
+                    rightSection={<IconCaretDownFilled size={16}/>}
                 >
                     {locale.toUpperCase()}
                 </Button>

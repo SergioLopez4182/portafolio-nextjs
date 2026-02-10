@@ -75,14 +75,14 @@ export default function Contact() {
                 >
                     <ActionIcon
                         variant="subtle"
-                        size="xl"
+                        size="lg"
                         aria-label="copy-email"
                         onClick={handleCopyEmail}
                     >
                         {copied ? (
-                            <IconCheck size={28} />
+                            <IconCheck size={24} />
                         ) : (
-                            <IconCopy size={28} />
+                            <IconCopy size={24} />
                         )}
                     </ActionIcon>
                 </Tooltip>
@@ -96,11 +96,11 @@ export default function Contact() {
                         target="_blank"
                         rel="noopener noreferrer"
                         variant="subtle"
-                        size="xl"
+                        size="lg"
                         radius="md"
                         aria-label="LinkedIn"
                     >
-                        <IconBrandLinkedin size={28} />
+                        <IconBrandLinkedin size={24} />
                     </ActionIcon>
                 </Tooltip>
 
@@ -111,11 +111,11 @@ export default function Contact() {
                         target="_blank"
                         rel="noopener noreferrer"
                         variant="subtle"
-                        size="xl"
+                        size="lg"
                         radius="md"
                         aria-label="GitHub"
                     >
-                        <IconBrandGithub size={28} />
+                        <IconBrandGithub size={24} />
                     </ActionIcon>
                 </Tooltip>
             </Group>

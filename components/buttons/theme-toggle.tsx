@@ -31,7 +31,7 @@ export default function ThemeToggle({ isMobile }: Props) {
             <Button
                 onClick={toggle}
                 variant="outline"
-                size="compact-lg"
+                size="compact-md"
                 rightSection={colorScheme === "dark" ? <IconSunFilled size={24} /> : <IconMoonFilled size={24} />}
             >
                 {colorScheme === "dark" ? t("light_mode") : t("dark_mode")}
@@ -42,7 +42,7 @@ export default function ThemeToggle({ isMobile }: Props) {
             <ActionIcon
                 onClick={toggle}
                 variant="subtle"
-                size="xl"
+                size="lg"
                 aria-label="Cambiar tema"
             >
                 {colorScheme === "dark" ? <IconSunFilled size={24} /> : <IconMoonFilled size={24} />}

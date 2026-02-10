@@ -58,7 +58,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="px-6 md:px-8 h-16 flex items-center justify-between bg-white dark:bg-gray-900">
+        <nav className="px-6 md:px-8 h-16 flex items-center justify-between bg-white dark:bg-neutral-800">
             <Image
                 src="/logo-placeholder-alt.svg"
                 alt="Logo"
@@ -78,7 +78,7 @@ export default function Navbar() {
                             <Button
                                 key={i}
                                 variant={calculateActive(section.url, false)}
-                                size="compact-lg"
+                                size="compact-md"
                                 radius="md"
                                 className="whitespace-nowrap"
                                 onClick={() => router.push(section.url)}
@@ -103,7 +103,7 @@ export default function Navbar() {
                                 <Button
                                     key={i}
                                     variant={calculateActive(section.url, true)}
-                                    size="compact-lg"
+                                    size="compact-md"
                                     className="whitespace-nowrap"
                                     onClick={() => {
                                         router.push(section.url);

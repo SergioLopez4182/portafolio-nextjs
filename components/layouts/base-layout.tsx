@@ -9,7 +9,7 @@ export default function BaseLayout({ children }: Props) {
     const t = useTranslations('');
     
     return (
-        <div className="min-h-screen flex flex-col bg-gray-200 dark:bg-gray-950">
+        <div className="min-h-screen flex flex-col bg-gray-200 dark:bg-neutral-900">
             <Navbar />
 
             <main className="flex-1 flex items-center justify-center">
