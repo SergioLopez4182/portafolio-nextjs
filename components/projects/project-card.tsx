@@ -1,6 +1,6 @@
 import { useRouter } from 'next/navigation';
 import { Project } from '@/types/project';
-import { Card, Image, Text, Badge, Button, Group, Stack } from '@mantine/core';
+import { Card, Image, Text, Badge, Button, Group, Stack, SimpleGrid } from '@mantine/core';
 
 interface Props {
     project: Project;
@@ -9,31 +9,51 @@ interface Props {
 export default function ProjectCard({ project }: Props) {
     const router = useRouter();
 
+    const images = [
+        'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png',
+        'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png',
+        'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png',
+    ];
+
     return (
-        <article
-            className={
-                "flex flex-col border-2 rounded-lg p-4 h-fit cursor-pointer border-gray-400 " +
-                "hover:border-indigo-500 hover:bg-gray-300" +
-                ""
-            }
-            onClick={() => router.push('/projects/' + project.slug)}
+        <Card
+            withBorder
+            shadow="sm"
+            radius="md"
+            component="a"
+            href={`/projects/${project.slug}`}
+            className="border-2 border-transparent hover:border-indigo-500 hover:bg-indigo-300 hover:text-white"
         >
-            <section className="">
-                <Stack gap={0}>
-                    <Text size="sm" fw={700} c="dimmed">{project.period}</Text>
+            <Card.Section withBorder inheritPadding py="xs">
+                <Group justify="space-between">
                     <Text fw={700}>{project.title}</Text>
-                    <Text c="dimmed">{project.description}</Text>
-                    <Group gap="xs">
-                        {
-                            project.stack.core.map((s, i) => (
-                                <Badge key={i} variant="light">{s}</Badge>
-                            ))
-                        }
-                    </Group>
+                </Group>
+            </Card.Section>
 
-                </Stack>
+            <Text my="sm" size="sm">
+                {project.description}
+            </Text>
 
-            </section>
-        </article>
+            <Group gap="xs">
+                {
+                    project.language.map((s, i) => (
+                        <Badge key={i} variant="filled">{s}</Badge>
+                    ))
+                }
+            </Group>
+
+            {/* <Card.Section mt="sm">
+                <Image src="/project-placeholder.jpg" />
+            </Card.Section> */}
+
+            <Card.Section inheritPadding mt="sm" pb="md">
+                <SimpleGrid cols={3}>
+                    {images.map((image) => (
+                        <Image src={image} key={image} radius="sm" />
+                    ))}
+                </SimpleGrid>
+            </Card.Section>
+
+        </Card>
     );
 }

@@ -7,6 +7,7 @@ import {
     Group,
     ActionIcon,
     HoverCard,
+    SimpleGrid,
 } from "@mantine/core";
 import { IconAlertCircle } from "@tabler/icons-react";
 import PageLayout from "@/components/layouts/page-layout";
@@ -58,11 +59,11 @@ export default function ProjectsView({
                 </Text>
             </Stack>
 
-            <Stack align="stretch" className="w-full">
+            <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }}>
                 {projects.map((p) => (
                     <ProjectCard key={p.slug} project={p} />
                 ))}
-            </Stack>
+            </SimpleGrid>
         </PageLayout>
     );
 }

@@ -92,6 +92,226 @@
                     "Eliminar la dependencia de procesos manuales y correos electrónicos"
                 ]
             }
+        },
+        {
+            "slug": "access-tickets-app",
+            "title": "Sistema para generación de boletas",
+            "description": "Registro de entradas y salidas para vehículos de carga.",
+            "period": "NOV 2023 - MAY 2024",
+            "role": {
+                "main": "TBD.",
+                "description": "TBD.",
+                "responsabilities": [
+                    "TBD."
+                ]
+            },
+            "language": [
+                "TypeScript",
+                "Dart",
+                "Python"
+            ],
+            "stack": {
+                "core": [
+                    "Flutter",
+                    "React",
+                    "Next.js",
+                    "Django",
+                    "MySQL"
+                ],
+                "libraries": [
+                    "MUI",
+                    "Tailwind CSS",
+                    "MUI Icons",
+                    "Django REST Framework",
+                    "Material"
+                ]
+            },
+            "context": [
+                "Proyecto orientado a digitalizar el registro de accesos, pesajes y salidas de vehículos de carga en una empresa de venta de material a granel. El proceso incluía múltiples pesajes por vehículo y se realizaba de forma manual en caseta. El sistema integra visión por computadora para identificar vehículos y registrar eventos automáticamente."
+            ],
+            "tecnical_challenges": {
+                "description": "TBD.",
+                "items": [
+                    "TBD."
+                ]
+            },
+            "results": {
+                "description": "TBD.",
+                "items": [
+                    "TBD."
+                ]
+            }
+        },
+        {
+            "slug": "romberg-test-app",
+            "title": "Aplicación de seguimiento de pruebas Romberg",
+            "description": "Evaluación de estabilidad mediante visión por computadora.",
+            "period": "JUN 2023 - DIC 2023",
+            "role": {
+                "main": "TBD",
+                "description": "TBD.",
+                "responsabilities": [
+                    "TBD."
+                ]
+            },
+            "language": [
+                "TypeScript",
+                "Bash"
+            ],
+            "stack": {
+                "core": [
+                    "Electron.js",
+                    "React"
+                ],
+                "libraries": [
+                    "WebSockets",
+                    "JSON"
+                ]
+            },
+            "context": [
+                "Sistema desarrollado para estandarizar la evaluación de pruebas Romberg en operadores de una empresa de transporte de personal. El proceso previo era manual y dependía del criterio del personal médico, lo que generaba inconsistencias y falsos positivos. La solución guía al operador durante la evaluación mediante instrucciones visuales y auditivas, valida posturas mediante visión por computadora y determina el resultado con reglas predefinidas."
+            ],
+            "tecnical_challenges": {
+                "description": "TBD.",
+                "items": [
+                    "TBD."
+                ]
+            },
+            "results": {
+                "description": "TBD.",
+                "items": [
+                    "TBD."
+                ]
+            }
+        },
+        {
+            "slug": "camera-counting-data",
+            "title": "Sistema de consulta de datos históricos en cámaras de conteo",
+            "description": "TBD.",
+            "period": "NOV 2025",
+            "role": {
+                "main": "TBD",
+                "description": "TBD.",
+                "responsabilities": [
+                    "TBD."
+                ]
+            },
+            "language": [
+                "TypeScript"
+            ],
+            "stack": {
+                "core": [
+                    "Node.js"
+                ],
+                "libraries": [
+                    "REST API",
+                    "XML",
+                    "Digest Auth"
+                ]
+            },
+            "context": [
+                "TBD."
+            ],
+            "tecnical_challenges": {
+                "description": "TBD.",
+                "items": [
+                    "TBD."
+                ]
+            },
+            "results": {
+                "description": "TBD.",
+                "items": [
+                    "TBD."
+                ]
+            }
+        },
+        {
+            "slug": "arrival-departure-admin",
+            "title": "Sistema de administración de espacios de llegada y salida en aeropuerto",
+            "description": "TBD.",
+            "period": "JUN 2023 - MAY 2024",
+            "role": {
+                "main": "TBD",
+                "description": "TBD.",
+                "responsabilities": [
+                    "TBD."
+                ]
+            },
+            "language": [
+                "TypeScript",
+                "Python"
+            ],
+            "stack": {
+                "core": [
+                    "Node.js",
+                    "Next.js",
+                    "Django",
+                    "PostgreSQL"
+                ],
+                "libraries": [
+                    "MUI",
+                    "MUI X",
+                    "Tailwind CSS"
+                ]
+            },
+            "context": [
+                "TBD."
+            ],
+            "tecnical_challenges": {
+                "description": "TBD.",
+                "items": [
+                    "TBD."
+                ]
+            },
+            "results": {
+                "description": "TBD.",
+                "items": [
+                    "TBD."
+                ]
+            }
+        },
+        {
+            "slug": "boarding-passenger-app",
+            "title": "Aplicación de abordaje de pasajeros mediante reconocimiento facial",
+            "description": "TBD.",
+            "period": "NOV 2025",
+            "role": {
+                "main": "TBD",
+                "description": "TBD.",
+                "responsabilities": [
+                    "TBD."
+                ]
+            },
+            "language": [
+                "Dart",
+                "Python"
+            ],
+            "stack": {
+                "core": [
+                    "Flutter",
+                    "Django"
+                ],
+                "libraries": [
+                    "Material",
+                    "Google ML Kit",
+                    "Telegram"
+                ]
+            },
+            "context": [
+                "TBD."
+            ],
+            "tecnical_challenges": {
+                "description": "TBD.",
+                "items": [
+                    "TBD."
+                ]
+            },
+            "results": {
+                "description": "TBD.",
+                "items": [
+                    "TBD."
+                ]
+            }
         }
     ]
 }

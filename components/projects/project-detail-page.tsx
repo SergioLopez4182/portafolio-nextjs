@@ -62,7 +62,7 @@ export default function ProjectDetailPage({ project }: Props) {
                                 <Tabs.Tab value="context">{t('labels.context.tab')}</Tabs.Tab>
                                 <Tabs.Tab value="challenges">{t('labels.challenges.tab')}</Tabs.Tab>
                                 <Tabs.Tab value="results">{t('labels.results.tab')}</Tabs.Tab>
-                                <Tabs.Tab value="images">Imágenes</Tabs.Tab>
+                                <Tabs.Tab value="images" disabled>Imágenes</Tabs.Tab>
                             </Tabs.List>
 
                             <Tabs.Panel value="role" pt="lg">
