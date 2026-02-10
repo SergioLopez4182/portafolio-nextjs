@@ -1,10 +1,9 @@
 "use client";
 
-import { useRouter } from 'next/navigation';
 import { Project } from '@/types/project';
-import { Card, Image, Text, Badge, Button, Group, Stack, Title, Tabs, List, Divider } from '@mantine/core';
+import { Image, Text, Badge, Button, Group, Stack, Title, Tabs, List } from '@mantine/core';
 import PageLayout from '../layouts/page-layout';
-import { IconArrowLeft, IconExternalLink, IconMessageCircle, IconPhoto, IconSettings } from '@tabler/icons-react';
+import { IconExternalLink } from '@tabler/icons-react';
 import { useTranslations } from 'next-intl';
 import GoBackButton from '../buttons/go-back';
 

@@ -1,8 +1,7 @@
 "use client";
 
-import { ActionIcon, TextInput, PasswordInput, Button, Paper, Title, Text, Checkbox, Stack, Group, Divider } from "@mantine/core";
+import { Button, Title, Text, Stack, Group } from "@mantine/core";
 import { useRouter } from "next/navigation";
-import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
 import PageLayout from "@/components/layouts/page-layout";
 import { useTranslations } from "next-intl";
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { ActionIcon, Button, useMantineColorScheme } from "@mantine/core";
-import { IconCaretDownFilled, IconMoonFilled, IconSunFilled } from "@tabler/icons-react";
+import { IconMoonFilled, IconSunFilled } from "@tabler/icons-react";
 
 import { useTranslations } from "next-intl";
 
@@ -22,7 +22,7 @@ export default function ThemeToggle({ isMobile }: Props) {
         // 2) Tailwind
         document.documentElement.classList.toggle("dark", next === "dark");
 
-        // 3) Cookie para SSR
+        // 3) Cookie SSR
         document.cookie = `mantine-color-scheme=${next}; path=/; max-age=31536000`;
     };
 
