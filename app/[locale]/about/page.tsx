@@ -1,8 +1,9 @@
 "use client";
 
-import { Title, Text, Stack, Divider, List, Card, Group } from "@mantine/core";
+import { Title, Text, Stack, Divider, List, Card, Group, Badge, SimpleGrid } from "@mantine/core";
 import PageLayout from "@/components/layouts/page-layout";
 import { useTranslations } from "next-intl";
+import { TechCard } from "@/components/about/tech-card";
 
 export default function About() {
     const t = useTranslations('about');
@@ -24,55 +25,26 @@ export default function About() {
 
             <Title order={1} ta="center">{t('tech.title')}</Title>
 
-            <Group align="flex-start" justify="center" gap="lg">
-                <Card p="md" radius="md" withBorder shadow="lg">
-                    <Text size="xl" fw={700} ta="center">
-                        {t('tech.frontend.title')}
-                    </Text>
-                    <List size="lg" withPadding c="dimmed">
-                        <List.Item>{t('tech.frontend.stack.0')}</List.Item>
-                        <List.Item>{t('tech.frontend.stack.1')}</List.Item>
-                        <List.Item>{t('tech.frontend.stack.2')}</List.Item>
-                        <List.Item>{t('tech.frontend.stack.3')}</List.Item>
-                        <List.Item>{t('tech.frontend.stack.4')}</List.Item>
-                        <List.Item>{t('tech.frontend.stack.5')}</List.Item>
-                    </List>
-                </Card>
-                <Card p="md" radius="md" withBorder shadow="lg">
-                    <Text size="xl" fw={700} ta="center">
-                        {t('tech.backend.title')}
-                    </Text>
-                    <List size="lg" withPadding c="dimmed">
-                        <List.Item>{t('tech.backend.stack.0')}</List.Item>
-                        <List.Item>{t('tech.backend.stack.1')}</List.Item>
-                        <List.Item>{t('tech.backend.stack.2')}</List.Item>
-                        <List.Item>{t('tech.backend.stack.3')}</List.Item>
-                        <List.Item>{t('tech.backend.stack.4')}</List.Item>
-                    </List>
-                </Card>
-                <Card p="md" radius="md" withBorder shadow="lg">
-                    <Text size="xl" fw={700} ta="center">
-                        {t('tech.database.title')}
-                    </Text>
-                    <List size="lg" withPadding c="dimmed">
-                        <List.Item>{t('tech.database.stack.0')}</List.Item>
-                        <List.Item>{t('tech.database.stack.1')}</List.Item>
-                        <List.Item>{t('tech.database.stack.2')}</List.Item>
-                        <List.Item>{t('tech.database.stack.3')}</List.Item>
-                    </List>
-                </Card>
-                <Card p="md" radius="md" withBorder shadow="lg">
-                    <Text size="xl" fw={700} ta="center">
-                        {t('tech.infrastructure.title')}
-                    </Text>
-                    <List size="lg" withPadding c="dimmed">
-                        <List.Item>{t('tech.infrastructure.stack.0')}</List.Item>
-                        <List.Item>{t('tech.infrastructure.stack.1')}</List.Item>
-                        <List.Item>{t('tech.infrastructure.stack.2')}</List.Item>
-                        <List.Item>{t('tech.infrastructure.stack.3')}</List.Item>
-                    </List>
-                </Card>
-            </Group>
+            <SimpleGrid
+                cols={{ base: 1, sm: 2, md: 4 }}
+            >
+                <TechCard
+                    titleKey="tech.frontend.title"
+                    stackKey="tech.frontend.stack"
+                />
+                <TechCard
+                    titleKey="tech.backend.title"
+                    stackKey="tech.backend.stack"
+                />
+                <TechCard
+                    titleKey="tech.database.title"
+                    stackKey="tech.database.stack"
+                />
+                <TechCard
+                    titleKey="tech.infrastructure.title"
+                    stackKey="tech.infrastructure.stack"
+                />
+            </SimpleGrid>
 
             <Divider />
 
