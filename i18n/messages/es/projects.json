@@ -27,23 +27,26 @@
         "results": {
             "tab": "Resultados",
             "items_description": "Estos son los resultados alcanzados:"
+        },
+        "images": {
+            "tab": "Imágenes"
         }
     },
     "items": [
         {
             "slug": "work-permissions-app",
-            "title": "Sistema de gestión de permisos de trabajo",
+            "title": "Plataforma de gestión de permisos de trabajo para centros comerciales",
             "description": "Digitalización y centralización del proceso de solicitud y validación de permisos de trabajo en un centro comercial.",
             "period": "OCT 2024 - MAR 2025",
             "role": {
                 "main": "Desarrollador Frontend",
-                "description": "Mi rol dentro del proyecto fue como desarrollador Full Stack; sin embargo, tuve un mayor enfoque en el desarrollo frontend y la implementación de la experiencia de usuario.",
+                "description": "Participé como desarrollador Full Stack, con mayor enfoque en el desarrollo frontend y la implementación de la experiencia de usuario.",
                 "responsabilities": [
                     "Diseño de la arquitectura general del sistema",
                     "Diseño de la base de datos en PostgreSQL",
-                    "Escritura de queries y stored procedures",
+                    "Desarrollo de queries y stored procedures",
                     "Diseño e implementación de interfaces UI/UX",
-                    "Desarrollo frontend, incluyendo la integración con APIs",
+                    "Desarrollo frontend e integración con APIs",
                     "Apoyo en el desarrollo de endpoints del backend",
                     "Testing funcional y capacitación al personal operativo"
                 ]
@@ -68,41 +71,46 @@
                 ]
             },
             "context": [
-                "El proyecto surgió a partir de la necesidad del cliente de digitalizar y centralizar el proceso de gestión de permisos de trabajo dentro de un centro comercial.",
-                "El cliente administraba varios centros comerciales con múltiples locales, cada uno a cargo de un responsable. Cuando se requería realizar trabajos extraordinarios en un local, el responsable debía solicitar autorización a la administración mediante correo electrónico.",
-                "Este proceso manual generaba falta de trazabilidad, retrasos en la aprobación de solicitudes y frecuentes errores operativos y de comunicación.",
-                "El sistema debía permitir a los locatarios solicitar permisos de trabajo para sus locales y a los administradores validar, rechazar y dar seguimiento a dichas solicitudes mediante flujos controlados y definidos por rol.",
-                "El proyecto incluyó levantamiento de requerimientos, definición de arquitectura y stack tecnológico, desarrollo, pruebas internas y en sitio con el cliente, documentación y capacitación a usuarios finales."
+                "El proyecto surgió a partir de la necesidad del cliente de digitalizar y centralizar la gestión de permisos de trabajo dentro de sus centros comerciales.",
+                "Cada centro comercial contaba con múltiples locales, administrados por un responsable. Cuando se requería realizar trabajos extraordinarios —como ingreso de proveedores, adecuaciones o instalación de mobiliario— el responsable debía solicitar autorización a la administración mediante correo electrónico.",
+                "Este proceso manual generaba: Falta de trazabilidad, retrasos en la aprobación de solicitudes, errores operativos y de comunicación",
+                "El sistema debía permitir a los locatarios registrar solicitudes y a los administradores validarlas, rechazarlas o darles seguimiento mediante flujos definidos por rol.",
+                "El proyecto incluyó levantamiento de requerimientos, definición de arquitectura y stack tecnológico, desarrollo, pruebas internas y en sitio, documentación y capacitación a usuarios finales."
             ],
             "tecnical_challenges": {
-                "description": "El principal desafío del proyecto se centró en comprender a fondo la operación, el lenguaje y las variantes del proceso del cliente, separando responsabilidades por rol y traduciéndolas en un sistema claro, legible y reactivo al perfil de cada usuario.",
+                "description": "El principal desafío del proyecto fue comprender a profundidad la operación del cliente, su lenguaje y las distintas variantes del proceso, separando responsabilidades por rol y traduciéndolas en un sistema claro, legible y dinámico según el perfil de cada usuario.",
                 "items": [
                     "Definir claramente roles y permisos desde la base de datos hasta el frontend",
                     "Sincronizar la lógica de autorización de permisos entre backend y frontend",
                     "Garantizar que vistas, acciones y formularios se habilitaran dinámicamente según el rol del usuario",
-                    "Almacenar de forma eficiente los permisos generados para su posterior análisis"
+                    "Diseñar una estructura de almacenamiento que permitiera análisis posteriores"
                 ]
             },
             "results": {
-                "description": "Como resultado, se desarrolló una plataforma y una API capaces de recibir, procesar y almacenar permisos de trabajo categorizados por centro comercial, local, responsable y tipo de permiso.",
+                "description": "Como resultado, se desarrolló una plataforma y una API capaces de recibir, procesar y almacenar permisos de trabajo categorizados por centro comercial, local, responsable y tipo de permiso, permitiendo mayor control operativo y visibilidad administrativa.",
                 "items": [
-                    "Centralizar la gestión de permisos de trabajo",
-                    "Reducir significativamente los tiempos de respuesta administrativos",
-                    "Mejorar la trazabilidad y el control del proceso",
-                    "Eliminar la dependencia de procesos manuales y correos electrónicos"
+                    "Centralización del proceso de gestión de permisos",
+                    "Reducción significativa en tiempos de respuesta administrativos",
+                    "Mejora en la trazabilidad y control del proceso",
+                    "Eliminación de la dependencia de procesos manuales y correos electrónicos"
                 ]
             }
         },
         {
             "slug": "access-tickets-app",
-            "title": "Sistema para generación de boletas",
-            "description": "Registro de entradas y salidas para vehículos de carga.",
+            "title": "Sistema de gestión de accesos y pesaje para vehículos de carga",
+            "description": "Sistema de gestión de accesos y pesaje industrial para vehículos de carga, con visión por computadora y operación local.",
             "period": "NOV 2023 - MAY 2024",
             "role": {
-                "main": "TBD.",
-                "description": "TBD.",
+                "main": "Desarrollador Full Stack.",
+                "description": "Participé en el desarrollo del proyecto como Full Stack Developer, involucrándome principalmente en la construcción del núcleo del sistema: una API de eventos que centralizaba la operación. Además, participé en el diseño de la base de datos, el desarrollo de la aplicación móvil y el sitio web administrativo.",
                 "responsabilities": [
-                    "TBD."
+                    "Diseño de la arquitectura general del sistema",
+                    "Diseño de la base de datos en MySQL",
+                    "Creación de tablas, queries y stored procedures",
+                    "Implementación de interfaces UI/UX para web y aplicación móvil",
+                    "Integración con el sistema de visión por computadora",
+                    "Testing funcional y capacitación al personal operativo"
                 ]
             },
             "language": [
@@ -127,31 +135,48 @@
                 ]
             },
             "context": [
-                "Proyecto orientado a digitalizar el registro de accesos, pesajes y salidas de vehículos de carga en una empresa de venta de material a granel. El proceso incluía múltiples pesajes por vehículo y se realizaba de forma manual en caseta. El sistema integra visión por computadora para identificar vehículos y registrar eventos automáticamente."
+                "El cliente operaba múltiples accesos para vehículos de carga que transportaban material a granel por toneladas. Para ingresar a la planta, los vehículos debían pasar por una caseta equipada con una báscula industrial capaz de pesar el vehículo completo.",
+                "El proceso de registro y cálculo del material transportado se realizaba de forma manual por el personal de caseta, mediante la impresión de boletas que incluían el peso del vehículo. Cada unidad debía ser pesada en tres momentos clave: Al ingresar vacío a la planta, al salir cargado hacia la ruta de entrega y al finalizar la ruta.",
+                "Con base en estas mediciones, el área comercial calculaba los pesos brutos y netos del material vendido.",
+                "Adicionalmente, cada vehículo contaba con un identificador visual único en la caja de transporte. El cliente buscaba automatizar la lectura de estos identificadores mediante visión por computadora, reduciendo la intervención manual e integrando automáticamente la lectura del peso al sistema.",
+                "Ante este escenario, se propuso un sistema integral que permitiera: Detectar eventos de entrada y salida de forma automática; Generar boletas desde una aplicación móvil utilizada en caseta y brindar al área administrativa acceso centralizado a boletas y reportes.",
+                "El proyecto incluyó levantamiento de requerimientos, definición de arquitectura y stack tecnológico, desarrollo, pruebas internas y en sitio, documentación y capacitación."
             ],
             "tecnical_challenges": {
-                "description": "TBD.",
+                "description": "El mayor reto del proyecto estuvo relacionado con la implementación de la tecnología de visión por computadora. El equipo enfrentó múltiples dificultades en la instalación de cámaras y en la comunicación con la báscula industrial, principalmente debido a restricciones en la red del cliente y al uso de sistemas desactualizados en el hardware de pesaje.",
                 "items": [
-                    "TBD."
+                    "Comprender a fondo la operación y los cálculos utilizados en el proceso",
+                    "Interconectar múltiples componentes del sistema (báscula, cámaras, API, aplicaciones)",
+                    "Coordinar ajustes en la infraestructura y servidores del cliente",
+                    "Garantizar un sistema robusto, estable y tolerante a fallos en entornos industriales"
                 ]
             },
             "results": {
-                "description": "TBD.",
+                "description": "Como resultado, se implementó un sistema capaz de registrar automáticamente los eventos ocurridos en caseta, identificando cada vehículo y capturando su peso. Estos eventos se visualizaban en la aplicación móvil para la generación de boletas y posteriormente en el sitio web para su consulta y análisis.",
                 "items": [
-                    "TBD."
+                    "Reducir significativamente el tiempo de registro de vehículos en caseta",
+                    "Mejorar la trazabilidad y control de las boletas generadas",
+                    "Generar reportes administrativos con KPIs relevantes para la toma de decisiones"
                 ]
             }
         },
         {
             "slug": "romberg-test-app",
-            "title": "Aplicación de seguimiento de pruebas Romberg",
-            "description": "Evaluación de estabilidad mediante visión por computadora.",
+            "title": "Sistema de evaluación asistida para pruebas de Romberg",
+            "description": "Plataforma de evaluación asistida que digitaliza y estandariza la prueba de Romberg para operadores de transporte.",
             "period": "JUN 2023 - DIC 2023",
             "role": {
-                "main": "TBD",
-                "description": "TBD.",
+                "main": "Desarrollador Full Stack",
+                "description": "Participé como desarrollador Full Stack, con mayor enfoque en el desarrollo de la aplicación de escritorio, el diseño del flujo guiado de evaluación y la integración en tiempo real con el modelo de visión por computadora.",
                 "responsabilities": [
-                    "TBD."
+                    "Diseño de la arquitectura general de la solución",
+                    "Desarrollo de la aplicación de escritorio en Electron con React",
+                    "Diseño e implementación del flujo guiado de la evaluación",
+                    "Manejo del estado global de la prueba",
+                    "Generación de señales visuales, gráficas y alertas sonoras",
+                    "Integración con el modelo de visión por computadora",
+                    "Comunicación en tiempo real mediante WebSockets",
+                    "Almacenamiento local de resultados y sincronización con servicios externos"
                 ]
             },
             "language": [
@@ -169,147 +194,29 @@
                 ]
             },
             "context": [
-                "Sistema desarrollado para estandarizar la evaluación de pruebas Romberg en operadores de una empresa de transporte de personal. El proceso previo era manual y dependía del criterio del personal médico, lo que generaba inconsistencias y falsos positivos. La solución guía al operador durante la evaluación mediante instrucciones visuales y auditivas, valida posturas mediante visión por computadora y determina el resultado con reglas predefinidas."
+                "Uno de los clientes de la empresa, dedicado al transporte de personal, identificó un área de oportunidad en su proceso de evaluación médica previa a la operación de unidades.",
+                "Antes de iniciar un viaje, los operadores deben aprobar diversas pruebas médicas, siendo una de las más relevantes la prueba de Romberg, la cual evalúa la estabilidad y el equilibrio del usuario mediante la ejecución de distintas posturas y movimientos corporales.",
+                "El proceso existente se realizaba de forma manual y era supervisado por personal de enfermería, lo que provocaba: Criterios de evaluación variables, falsos positivos, falta de trazabilidad y evidencia del proceso.",
+                "Como solución, se propuso un sistema integral de evaluación asistida, capaz de: Guiar al operador durante cada etapa de la prueba, estandarizar los criterios de aprobación y generar evidencia digital del proceso.",
+                "El sistema define reglas claras de evaluación: El operador debe aprobar 3 de 4 pruebas para considerarse apto; En caso de fallo, se ejecuta una segunda ronda con pruebas simplificadas, para aprobar esta ronda, debe superar las 4 pruebas; de lo contrario, se considera no apto para operar",
+                "El proyecto incluyó levantamiento de requerimientos, definición de arquitectura y stack tecnológico, desarrollo, pruebas internas y en sitio, documentación y capacitación a usuarios finales."
             ],
             "tecnical_challenges": {
-                "description": "TBD.",
+                "description": "El principal desafío del proyecto fue garantizar una comunicación estable y confiable entre la aplicación de escritorio y el modelo de visión por computadora, lo que requirió múltiples iteraciones hasta definir una solución robusta y tolerante a fallos.",
                 "items": [
-                    "TBD."
+                    "Evaluación de distintos protocolos de comunicación entre componentes",
+                    "Ejecución de flujos y scripts independientes por prueba e intento",
+                    "Operación continua ante intermitencias de red y apagones inesperados",
+                    "Almacenamiento local de resultados con reintentos automáticos de envío al restablecer la conexión"
                 ]
             },
             "results": {
-                "description": "TBD.",
+                "description": "El proyecto dio como resultado un sistema integral robusto, con tolerancia a fallos de red y energía, que permitió al cliente:",
                 "items": [
-                    "TBD."
-                ]
-            }
-        },
-        {
-            "slug": "camera-counting-data",
-            "title": "Sistema de consulta de datos históricos en cámaras de conteo",
-            "description": "TBD.",
-            "period": "NOV 2025",
-            "role": {
-                "main": "TBD",
-                "description": "TBD.",
-                "responsabilities": [
-                    "TBD."
-                ]
-            },
-            "language": [
-                "TypeScript"
-            ],
-            "stack": {
-                "core": [
-                    "Node.js"
-                ],
-                "libraries": [
-                    "REST API",
-                    "XML",
-                    "Digest Auth"
-                ]
-            },
-            "context": [
-                "TBD."
-            ],
-            "tecnical_challenges": {
-                "description": "TBD.",
-                "items": [
-                    "TBD."
-                ]
-            },
-            "results": {
-                "description": "TBD.",
-                "items": [
-                    "TBD."
-                ]
-            }
-        },
-        {
-            "slug": "arrival-departure-admin",
-            "title": "Sistema de administración de espacios de llegada y salida en aeropuerto",
-            "description": "TBD.",
-            "period": "JUN 2023 - MAY 2024",
-            "role": {
-                "main": "TBD",
-                "description": "TBD.",
-                "responsabilities": [
-                    "TBD."
-                ]
-            },
-            "language": [
-                "TypeScript",
-                "Python"
-            ],
-            "stack": {
-                "core": [
-                    "Node.js",
-                    "Next.js",
-                    "Django",
-                    "PostgreSQL"
-                ],
-                "libraries": [
-                    "MUI",
-                    "MUI X",
-                    "Tailwind CSS"
-                ]
-            },
-            "context": [
-                "TBD."
-            ],
-            "tecnical_challenges": {
-                "description": "TBD.",
-                "items": [
-                    "TBD."
-                ]
-            },
-            "results": {
-                "description": "TBD.",
-                "items": [
-                    "TBD."
-                ]
-            }
-        },
-        {
-            "slug": "boarding-passenger-app",
-            "title": "Aplicación de abordaje de pasajeros mediante reconocimiento facial",
-            "description": "TBD.",
-            "period": "NOV 2025",
-            "role": {
-                "main": "TBD",
-                "description": "TBD.",
-                "responsabilities": [
-                    "TBD."
-                ]
-            },
-            "language": [
-                "Dart",
-                "Python"
-            ],
-            "stack": {
-                "core": [
-                    "Flutter",
-                    "Django"
-                ],
-                "libraries": [
-                    "Material",
-                    "Google ML Kit",
-                    "Telegram"
-                ]
-            },
-            "context": [
-                "TBD."
-            ],
-            "tecnical_challenges": {
-                "description": "TBD.",
-                "items": [
-                    "TBD."
-                ]
-            },
-            "results": {
-                "description": "TBD.",
-                "items": [
-                    "TBD."
+                    "Digitalizar completamente la prueba de Romberg",
+                    "Unificar y estandarizar los criterios de evaluación",
+                    "Generar trazabilidad y evidencia digital de cada prueba",
+                    "Reducir significativamente el error humano en la evaluación de operadores"
                 ]
             }
         }

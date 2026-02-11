@@ -1,0 +1,41 @@
+{
+    "slug": "camera-counting-data",
+    "title": "Sistema de consulta de datos históricos en cámaras de conteo",
+    "description": "TBD.",
+    "period": "NOV 2025",
+    "role": {
+        "main": "TBD",
+        "description": "TBD.",
+        "responsabilities": [
+            "TBD."
+        ]
+    },
+    "language": [
+        "TypeScript"
+    ],
+    "stack": {
+        "core": [
+            "Node.js"
+        ],
+        "libraries": [
+            "REST API",
+            "XML",
+            "Digest Auth"
+        ]
+    },
+    "context": [
+        "TBD."
+    ],
+    "tecnical_challenges": {
+        "description": "TBD.",
+        "items": [
+            "TBD."
+        ]
+    },
+    "results": {
+        "description": "TBD.",
+        "items": [
+            "TBD."
+        ]
+    }
+}

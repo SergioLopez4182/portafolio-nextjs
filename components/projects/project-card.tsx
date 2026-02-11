@@ -19,7 +19,7 @@ export default function ProjectCard({ project }: Props) {
             radius="md"
             component="a"
             href={`/projects/${project.slug}`}
-            className="border-2 border-transparent hover:border-indigo-500 hover:bg-indigo-500 hover:text-white"
+            className="border-2 border-transparent hover:border-[#4c6ef5] hover:bg-[#4c6ef5] hover:text-white"
             style={{
                 display: 'flex',
                 flexDirection: 'column',

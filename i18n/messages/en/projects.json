@@ -6,6 +6,7 @@
     "body": "The information presented in this document has been partially anonymized and adapted in order to avoid disclosing sensitive information related to the companies and clients I have worked with."
   },
   "labels": {
+    "demo": "View demo",
     "languages": "Programming languages",
     "stack": {
       "core": "Core stack",
@@ -26,25 +27,28 @@
     "results": {
       "tab": "Results",
       "items_description": "These are the results achieved:"
+    },
+    "images": {
+      "tab": "Images"
     }
   },
   "items": [
     {
       "slug": "work-permissions-app",
-      "title": "Work Permit Management System",
-      "description": "Digitalization and centralization of the work permit request and validation process within a shopping mall.",
+      "title": "Work Permit Management Platform for Shopping Centers",
+      "description": "Digitization and centralization of the work permit request and validation process within a shopping center.",
       "period": "OCT 2024 - MAR 2025",
       "role": {
         "main": "Frontend Developer",
-        "description": "My role in the project was as a Full Stack Developer; however, I had a stronger focus on frontend development and user experience implementation.",
+        "description": "I participated as a Full Stack Developer, with a stronger focus on frontend development and user experience implementation.",
         "responsabilities": [
           "Design of the overall system architecture",
           "PostgreSQL database design",
-          "Writing queries and stored procedures",
+          "Development of queries and stored procedures",
           "UI/UX design and implementation",
-          "Frontend development, including API integration",
+          "Frontend development and API integration",
           "Support in backend endpoint development",
-          "Functional testing and training for operational staff"
+          "Functional testing and operational staff training"
         ]
       },
       "language": [
@@ -67,41 +71,46 @@
         ]
       },
       "context": [
-        "The project originated from the client’s need to digitalize and centralize the work permit management process within a shopping mall.",
-        "The client managed several shopping malls with multiple stores, each assigned to a responsible manager. Whenever extraordinary work was required in a store, the manager had to request authorization from the administration via email.",
-        "This manual process caused a lack of traceability, approval delays, and frequent operational and communication errors.",
-        "The system needed to allow tenants to request work permits for their stores and enable administrators to approve, reject, and track those requests through controlled, role-based workflows.",
-        "The project included requirements gathering, architecture and technology stack definition, development, internal and on-site testing with the client, documentation, and training for end users."
+        "The project originated from the client's need to digitize and centralize the work permit management process across their shopping centers.",
+        "Each shopping center contained multiple stores, each managed by a responsible person. Whenever extraordinary work was required —such as vendor access, renovations, or furniture installation— the store manager had to request authorization via email.",
+        "This manual process resulted in a lack of traceability, delays in approval times, and frequent operational and communication errors.",
+        "The system needed to allow tenants to submit requests while administrators could validate, reject, and track them through role-based workflows.",
+        "The project included requirements gathering, architecture and technology stack definition, development, internal and on-site testing, documentation, and end-user training."
       ],
       "tecnical_challenges": {
-        "description": "The main challenge of the project was gaining a deep understanding of the client’s operation, terminology, and process variations, separating responsibilities by role and translating them into a clear, readable system that reacted dynamically to each user profile.",
+        "description": "The main challenge of the project was thoroughly understanding the client's operational process, terminology, and variations, separating responsibilities by role and translating them into a clear, dynamic, and role-aware system.",
         "items": [
           "Clearly defining roles and permissions from the database layer to the frontend",
-          "Synchronizing permission authorization logic between backend and frontend",
-          "Ensuring that views, actions, and forms were dynamically enabled based on user role",
-          "Efficiently storing generated permits for later analysis"
+          "Synchronizing authorization logic between backend and frontend",
+          "Ensuring views, actions, and forms dynamically adapted based on user roles",
+          "Designing a data structure that enabled future analysis"
         ]
       },
       "results": {
-        "description": "As a result, a platform and API were developed to receive, process, and store work permits categorized by shopping mall, store, responsible party, and permit type.",
+        "description": "As a result, a platform and API were developed to receive, process, and store work permits categorized by shopping center, store, responsible party, and permit type, enabling greater operational control and administrative visibility.",
         "items": [
-          "Centralized work permit management",
+          "Centralization of the work permit management process",
           "Significant reduction in administrative response times",
-          "Improved process traceability and control",
+          "Improved traceability and process control",
           "Elimination of dependency on manual processes and email communication"
         ]
       }
     },
     {
       "slug": "access-tickets-app",
-      "title": "Sistema para generación de boletas",
-      "description": "Registro de entradas y salidas para vehículos de carga.",
+      "title": "Access and Weighing Management System for Cargo Vehicles",
+      "description": "Industrial access control and weighing management system for cargo vehicles, integrating computer vision and local operation.",
       "period": "NOV 2023 - MAY 2024",
       "role": {
-        "main": "TBD.",
-        "description": "TBD.",
+        "main": "Full Stack Developer",
+        "description": "I participated as a Full Stack Developer, primarily involved in building the system’s core: an event-driven API that centralized operations. I also contributed to database design, mobile application development, and the administrative web platform.",
         "responsabilities": [
-          "TBD."
+          "Design of the overall system architecture",
+          "MySQL database design",
+          "Creation of tables, queries, and stored procedures",
+          "UI/UX implementation for web and mobile applications",
+          "Integration with the computer vision system",
+          "Functional testing and operational staff training"
         ]
       },
       "language": [
@@ -122,35 +131,52 @@
           "Tailwind CSS",
           "MUI Icons",
           "Django REST Framework",
-          "Material"
+          "Material UI"
         ]
       },
       "context": [
-        "Proyecto orientado a digitalizar el registro de accesos, pesajes y salidas de vehículos de carga en una empresa de venta de material a granel. El proceso incluía múltiples pesajes por vehículo y se realizaba de forma manual en caseta. El sistema integra visión por computadora para identificar vehículos y registrar eventos automáticamente."
+        "The client operated multiple access points for cargo vehicles transporting bulk materials by the ton. To enter the plant, vehicles had to pass through a checkpoint equipped with an industrial scale capable of weighing the entire vehicle.",
+        "The registration and material calculation process was performed manually by checkpoint staff, generating printed tickets containing the vehicle’s weight. Each vehicle was weighed at three key moments: entering the plant empty, leaving loaded for delivery, and returning after completing the route.",
+        "Based on these measurements, the commercial team calculated gross and net material weights.",
+        "Additionally, each vehicle had a unique visual identifier displayed on its cargo container. The client aimed to automate the reading of these identifiers using computer vision, reducing manual intervention and automatically integrating weight readings into the system.",
+        "To address this scenario, an integrated system was proposed to automatically detect entry and exit events, generate tickets through a mobile application used at the checkpoint, and provide centralized administrative access to tickets and reports.",
+        "The project included requirements gathering, architecture and technology stack definition, development, internal and on-site testing, documentation, and training."
       ],
       "tecnical_challenges": {
-        "description": "TBD.",
+        "description": "The primary challenge was related to implementing computer vision technology. The team faced multiple difficulties in camera installation and communication with the industrial scale, mainly due to network restrictions and outdated hardware systems.",
         "items": [
-          "TBD."
+          "Deeply understanding operational workflows and weight calculation logic",
+          "Integrating multiple system components (scale, cameras, API, applications)",
+          "Coordinating infrastructure and server adjustments with the client",
+          "Ensuring a robust, stable, and fault-tolerant system in industrial environments"
         ]
       },
       "results": {
-        "description": "TBD.",
+        "description": "As a result, a system was implemented capable of automatically registering checkpoint events, identifying each vehicle and capturing its weight. These events were displayed in the mobile application for ticket generation and later in the web platform for reporting and analysis.",
         "items": [
-          "TBD."
+          "Significant reduction in vehicle registration time at checkpoints",
+          "Improved traceability and control of generated tickets",
+          "Administrative reporting with relevant KPIs for decision-making"
         ]
       }
     },
     {
       "slug": "romberg-test-app",
-      "title": "Aplicación de seguimiento de pruebas Romberg",
-      "description": "Evaluación de estabilidad mediante visión por computadora.",
-      "period": "JUN 2023 - DIC 2023",
+      "title": "Assisted Evaluation System for Romberg Tests",
+      "description": "Assisted evaluation platform that digitizes and standardizes the Romberg test for transportation operators.",
+      "period": "JUN 2023 - DEC 2023",
       "role": {
-        "main": "TBD",
-        "description": "TBD.",
+        "main": "Full Stack Developer",
+        "description": "I participated as a Full Stack Developer, with a primary focus on desktop application development, guided evaluation flow design, and real-time integration with the computer vision model.",
         "responsabilities": [
-          "TBD."
+          "Design of the overall solution architecture",
+          "Desktop application development using Electron and React",
+          "Design and implementation of the guided evaluation flow",
+          "Global state management for the evaluation process",
+          "Implementation of visual signals, charts, and audio alerts",
+          "Integration with the computer vision model",
+          "Real-time communication via WebSockets",
+          "Local result storage and synchronization with external services"
         ]
       },
       "language": [
@@ -168,147 +194,29 @@
         ]
       },
       "context": [
-        "Sistema desarrollado para estandarizar la evaluación de pruebas Romberg en operadores de una empresa de transporte de personal. El proceso previo era manual y dependía del criterio del personal médico, lo que generaba inconsistencias y falsos positivos. La solución guía al operador durante la evaluación mediante instrucciones visuales y auditivas, valida posturas mediante visión por computadora y determina el resultado con reglas predefinidas."
+        "One of the company’s clients, dedicated to personnel transportation, identified an opportunity to improve its pre-operation medical evaluation process.",
+        "Before starting a trip, operators must pass several medical tests, one of the most important being the Romberg test, which evaluates stability and balance through specific postures and body movements.",
+        "The existing process was manual and supervised by nursing staff, resulting in inconsistent evaluation criteria, false positives, and lack of traceability and evidence.",
+        "As a solution, an assisted evaluation system was proposed to guide operators through each stage of the test, standardize approval criteria, and generate digital evidence.",
+        "The system defined clear evaluation rules: the operator must pass 3 out of 4 tests to be considered fit. In case of failure, a second round with simplified tests was executed; to pass this round, all 4 tests had to be approved. Otherwise, the operator was deemed unfit to operate.",
+        "The project included requirements gathering, architecture and technology stack definition, development, internal and on-site testing, documentation, and end-user training."
       ],
       "tecnical_challenges": {
-        "description": "TBD.",
+        "description": "The main technical challenge was ensuring stable and reliable communication between the desktop application and the computer vision model, requiring multiple iterations to achieve a robust and fault-tolerant solution.",
         "items": [
-          "TBD."
+          "Evaluation of different communication protocols between components",
+          "Execution of independent flows and scripts per test and attempt",
+          "Continuous operation despite network interruptions and unexpected power outages",
+          "Local result storage with automatic retry mechanisms upon reconnection"
         ]
       },
       "results": {
-        "description": "TBD.",
+        "description": "The project resulted in a robust, fault-tolerant system that allowed the client to:",
         "items": [
-          "TBD."
-        ]
-      }
-    },
-    {
-      "slug": "camera-counting-data",
-      "title": "Sistema de consulta de datos históricos en cámaras de conteo",
-      "description": "TBD.",
-      "period": "NOV 2025",
-      "role": {
-        "main": "TBD",
-        "description": "TBD.",
-        "responsabilities": [
-          "TBD."
-        ]
-      },
-      "language": [
-        "TypeScript"
-      ],
-      "stack": {
-        "core": [
-          "Node.js"
-        ],
-        "libraries": [
-          "REST API",
-          "XML",
-          "Digest Auth"
-        ]
-      },
-      "context": [
-        "TBD."
-      ],
-      "tecnical_challenges": {
-        "description": "TBD.",
-        "items": [
-          "TBD."
-        ]
-      },
-      "results": {
-        "description": "TBD.",
-        "items": [
-          "TBD."
-        ]
-      }
-    },
-    {
-      "slug": "arrival-departure-admin",
-      "title": "Sistema de administración de espacios de llegada y salida en aeropuerto",
-      "description": "TBD.",
-      "period": "JUN 2023 - MAY 2024",
-      "role": {
-        "main": "TBD",
-        "description": "TBD.",
-        "responsabilities": [
-          "TBD."
-        ]
-      },
-      "language": [
-        "TypeScript",
-        "Python"
-      ],
-      "stack": {
-        "core": [
-          "Node.js",
-          "Next.js",
-          "Django",
-          "PostgreSQL"
-        ],
-        "libraries": [
-          "MUI",
-          "MUI X",
-          "Tailwind CSS"
-        ]
-      },
-      "context": [
-        "TBD."
-      ],
-      "tecnical_challenges": {
-        "description": "TBD.",
-        "items": [
-          "TBD."
-        ]
-      },
-      "results": {
-        "description": "TBD.",
-        "items": [
-          "TBD."
-        ]
-      }
-    },
-    {
-      "slug": "boarding-passenger-app",
-      "title": "Aplicación de abordaje de pasajeros mediante reconocimiento facial",
-      "description": "TBD.",
-      "period": "NOV 2025",
-      "role": {
-        "main": "TBD",
-        "description": "TBD.",
-        "responsabilities": [
-          "TBD."
-        ]
-      },
-      "language": [
-        "Dart",
-        "Python"
-      ],
-      "stack": {
-        "core": [
-          "Flutter",
-          "Django"
-        ],
-        "libraries": [
-          "Material",
-          "Google ML Kit",
-          "Telegram"
-        ]
-      },
-      "context": [
-        "TBD."
-      ],
-      "tecnical_challenges": {
-        "description": "TBD.",
-        "items": [
-          "TBD."
-        ]
-      },
-      "results": {
-        "description": "TBD.",
-        "items": [
-          "TBD."
+          "Fully digitize the Romberg evaluation process",
+          "Standardize evaluation criteria",
+          "Generate traceability and digital evidence for each test",
+          "Significantly reduce human error in operator assessments"
         ]
       }
     }

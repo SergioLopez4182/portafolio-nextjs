@@ -1,0 +1,43 @@
+{
+    "slug": "boarding-passenger-app",
+    "title": "Aplicación de abordaje de pasajeros mediante reconocimiento facial",
+    "description": "TBD.",
+    "period": "NOV 2025",
+    "role": {
+        "main": "TBD",
+        "description": "TBD.",
+        "responsabilities": [
+            "TBD."
+        ]
+    },
+    "language": [
+        "Dart",
+        "Python"
+    ],
+    "stack": {
+        "core": [
+            "Flutter",
+            "Django"
+        ],
+        "libraries": [
+            "Material",
+            "Google ML Kit",
+            "Telegram"
+        ]
+    },
+    "context": [
+        "TBD."
+    ],
+    "tecnical_challenges": {
+        "description": "TBD.",
+        "items": [
+            "TBD."
+        ]
+    },
+    "results": {
+        "description": "TBD.",
+        "items": [
+            "TBD."
+        ]
+    }
+}

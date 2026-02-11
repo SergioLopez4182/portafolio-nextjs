@@ -1,0 +1,45 @@
+{
+    "slug": "arrival-departure-admin",
+    "title": "Sistema de administración de espacios de llegada y salida en aeropuerto",
+    "description": "TBD.",
+    "period": "JUN 2023 - MAY 2024",
+    "role": {
+        "main": "TBD",
+        "description": "TBD.",
+        "responsabilities": [
+            "TBD."
+        ]
+    },
+    "language": [
+        "TypeScript",
+        "Python"
+    ],
+    "stack": {
+        "core": [
+            "Node.js",
+            "Next.js",
+            "Django",
+            "PostgreSQL"
+        ],
+        "libraries": [
+            "MUI",
+            "MUI X",
+            "Tailwind CSS"
+        ]
+    },
+    "context": [
+        "TBD."
+    ],
+    "tecnical_challenges": {
+        "description": "TBD.",
+        "items": [
+            "TBD."
+        ]
+    },
+    "results": {
+        "description": "TBD.",
+        "items": [
+            "TBD."
+        ]
+    }
+}

@@ -55,13 +55,13 @@ export default function ProjectDetailPage({ project }: Props) {
 
                 <div className="flex flex-col md:flex-row gap-4">
                     <section className="w-full md:w-3/4 border-2 border-gray-300 rounded-xl p-4">
-                        <Tabs variant="pills" defaultValue="role" p={0}>
+                        <Tabs variant="default" defaultValue="role" p={0}>
                             <Tabs.List grow>
                                 <Tabs.Tab value="role">{t('labels.role.tab')}</Tabs.Tab>
                                 <Tabs.Tab value="context">{t('labels.context.tab')}</Tabs.Tab>
                                 <Tabs.Tab value="challenges">{t('labels.challenges.tab')}</Tabs.Tab>
                                 <Tabs.Tab value="results">{t('labels.results.tab')}</Tabs.Tab>
-                                <Tabs.Tab value="images" disabled>Imágenes</Tabs.Tab>
+                                <Tabs.Tab value="images" disabled>{t('labels.images.tab')}</Tabs.Tab>
                             </Tabs.List>
 
                             <Tabs.Panel value="role" pt="lg">
@@ -127,7 +127,7 @@ export default function ProjectDetailPage({ project }: Props) {
 
                             <Tabs.Panel value="images" pt="lg">
                                 <Image
-                                    src="/project-placeholder.jpg"
+                                    src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png"
                                     fallbackSrc="/project-placeholder.jpg"
                                     alt="project-image"
                                     radius="md"
