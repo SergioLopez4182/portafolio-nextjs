@@ -16,7 +16,7 @@ export function TechCard({ titleKey, stackKey }: TechCardProps) {
             h="100%"
             radius="md"
             withBorder
-            className="border-2 border-transparent hover:border-indigo-500 hover:shadow-2xl"
+            className="border-2 border-transparent hover:border-[#4c6ef5] hover:shadow-2xl"
         >
             <Card.Section withBorder inheritPadding py="xs">
                 <Text size="xl" fw={700} ta="center">
