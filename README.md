@@ -7,7 +7,7 @@ I will progressively add independent demo implementations where possible.
 
 ## 🌐 Live Website
 
-https://portafolio-nextjs-pied.vercel.app
+https://portfolio-sergio-ls-pied.vercel.app
 
 ## ✨ About This Project
 
