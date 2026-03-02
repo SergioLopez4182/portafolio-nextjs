@@ -1,7 +1,6 @@
 "use client";
 
-import { Button, Stack, Drawer, Text, Group, Divider, Burger, Title } from "@mantine/core";
-import Image from "next/image";
+import { Button, Stack, Drawer, Text, Group, Divider, Burger } from "@mantine/core";
 import { useRouter, usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { routing } from "@/i18n/routing";
