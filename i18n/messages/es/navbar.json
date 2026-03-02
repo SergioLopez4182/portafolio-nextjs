@@ -4,6 +4,7 @@
   "projects": "Proyectos",
   "about": "Sobre mí",
   "contact": "Contacto",
+  "toggle_scheme": "Cambiar tema",
   "dark_mode": "Tema oscuro",
   "light_mode": "Tema claro"
 }

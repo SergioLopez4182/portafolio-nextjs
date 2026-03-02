@@ -4,6 +4,7 @@
   "projects": "Projects",
   "about": "About me",
   "contact": "Contact",
+  "toggle_scheme": "Toggle color scheme",
   "dark_mode": "Dark mode",
   "light_mode": "Light mode"
 }

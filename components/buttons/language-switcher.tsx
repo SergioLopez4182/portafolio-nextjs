@@ -10,7 +10,7 @@ interface Props {
     isMobile: boolean;
 }
 
-export default function LanguageSwitcher({isMobile} : Props) {
+export default function LanguageSwitcher({ isMobile }: Props) {
     const locale = useLocale();
     const pathname = usePathname();
     const router = useRouter();
@@ -27,12 +27,20 @@ export default function LanguageSwitcher({isMobile} : Props) {
     };
 
     return (
-        <Menu position="bottom" shadow="md">
+        <Menu
+            trigger="click-hover"
+            loop={false}
+            withinPortal={false}
+            trapFocus={false}
+            menuItemTabIndex={0}
+            position="bottom"
+            shadow="md"
+        >
             <Menu.Target>
                 <Button
                     variant={isMobile ? "outline" : "subtle"}
                     size="compact-md"
-                    rightSection={<IconCaretDownFilled size={16}/>}
+                    rightSection={<IconCaretDownFilled size={16} />}
                 >
                     {locale.toUpperCase()}
                 </Button>
@@ -42,6 +50,7 @@ export default function LanguageSwitcher({isMobile} : Props) {
                 {routing.locales.map((loc) => (
                     <Menu.Item
                         key={loc}
+                        color="gray"
                         onClick={() => handleChangeLocale(loc)}
                         disabled={loc === locale}
                     >

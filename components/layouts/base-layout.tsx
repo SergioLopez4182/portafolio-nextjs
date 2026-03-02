@@ -16,7 +16,7 @@ export default function BaseLayout({ children }: Props) {
                 {children}
             </main>
 
-            <footer className="p-8 text-sm text-gray-900 dark:text-gray-50 text-center">
+            <footer className="p-8 text-sm text-gray-500 dark:text-gray-50 text-center">
                 © {t('common.year')} · {t('common.full_name')} · {t('common.location')}
             </footer>
         </div>

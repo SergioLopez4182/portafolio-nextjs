@@ -1,35 +1,31 @@
 "use client";
 
 import { Button, Stack, Drawer, Text, Group, Divider, Burger } from "@mantine/core";
-import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { routing } from "@/i18n/routing";
 import LanguageSwitcher from "@/components/buttons/language-switcher";
 import { useDisclosure } from "@mantine/hooks";
 import ThemeToggle from "../buttons/theme-toggle";
+import LogoButton from "../buttons/logo-button";
 
 export default function Navbar() {
-    const t = useTranslations("navbar");
+    const t = useTranslations("");
     const router = useRouter();
     const pathname = usePathname();
     const [opened, { close, toggle }] = useDisclosure(false);
 
     const sections = [
         {
-            name: t("home"),
-            url: "/",
-        },
-        {
-            name: t("projects"),
+            name: t("navbar.projects"),
             url: "/projects",
         },
         {
-            name: t("about"),
+            name: t("navbar.about"),
             url: "/about",
         },
         {
-            name: t("contact"),
+            name: t("navbar.contact"),
             url: "/contact",
         },
     ];
@@ -58,21 +54,12 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="px-6 md:px-8 h-16 flex items-center justify-between bg-white dark:bg-neutral-800">
-            <Image
-                src="/logo-placeholder-alt.svg"
-                alt="Logo"
-                width={180}
-                height={80}
-                priority
-            />
+        <nav className="px-8 lg:px-32 2xl:px-64 h-16 flex items-center justify-between bg-white dark:bg-neutral-800">
+            <LogoButton />
 
             {/* Desktop */}
             <div className="hidden lg:block">
                 <Group gap="xs">
-                    <LanguageSwitcher isMobile={false} />
-                    <ThemeToggle isMobile={false} />
-                    <Divider size="sm" my="sm" orientation="vertical" color="gray" />
                     {
                         sections.map((section, i) => (
                             <Button
@@ -87,6 +74,10 @@ export default function Navbar() {
                             </Button>
                         ))
                     }
+                    <Divider size="sm" my="sm" orientation="vertical" color="gray" />
+                    <LanguageSwitcher isMobile={false} />
+                    <Divider size="sm" my="sm" orientation="vertical" color="gray" />
+                    <ThemeToggle isMobile={false} />
                 </Group>
             </div>
 
@@ -95,7 +86,7 @@ export default function Navbar() {
                 <Drawer
                     opened={opened}
                     onClose={close}
-                    title={<Text size="xl" fw={700}>{t('title')}</Text>}
+                    title={<Text size="xl" fw={700}>{t('navbar.title')}</Text>}
                 >
                     <Stack gap="xs">
                         {
