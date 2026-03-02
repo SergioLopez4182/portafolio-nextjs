@@ -39,9 +39,9 @@ export default function ThemeToggle({ isMobile }: Props) {
                 size="md"
                 thumbIcon={
                     colorScheme === "dark" ? (
-                        <IconSunFilled size={12} color="var(--mantine-color-gray-6)" stroke={2} />
+                        <IconMoonFilled size={12} color="var(--mantine-color-gray-6)" stroke={2} />
                     ) : (
-                        <IconMoonFilled size={12} color="var(--mantine-color-gray-8)" stroke={2} />
+                        <IconSunFilled size={12} color="var(--mantine-color-gray-8)" stroke={2} />
                     )
                 }
                 aria-label={t("toggle_scheme")}

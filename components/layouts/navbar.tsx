@@ -113,7 +113,7 @@ export default function Navbar() {
                 </Drawer>
 
                 <Burger
-                    size="md"
+                    size="sm"
                     opened={opened}
                     onClick={toggle}
                     aria-label="toggle-navigation-drawer"

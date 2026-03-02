@@ -11,17 +11,19 @@ export default function Home() {
 
   return (
     <PageLayout>
-      <Stack gap={0} justify="center" align="start">
-        <Title order={1} c="indigo">
+      <Stack gap={0}>
+        <span style={{ color: "var(--mantine-color-indigo-6)" }}
+          className="font-extrabold text-3xl lg:text-4xl leading-none">
           {t('common.full_name')}
-        </Title>
+        </span>
 
-        <Title order={2} c="dimmed">
-          {t('common.role')}
-        </Title>
+        <span style={{ color: "var(--mantine-color-dimmed)" }}
+          className="text-lg lg:text-xl font-mono uppercase">
+          {"<"}{t('common.role')}{" />"}
+        </span>
       </Stack>
 
-      <Text size="lg">
+      <Text size="lg" c="dimmed">
         {t('home.summary')}
       </Text>
 
@@ -36,7 +38,8 @@ export default function Home() {
           {t('home.contact_me')}
         </Button>
         <Button
-          variant="subtle"
+          variant="filled"
+          color="gray"
           size="md"
           radius="md"
           className="whitespace-nowrap"
